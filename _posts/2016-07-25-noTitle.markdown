@@ -1,0 +1,11 @@
+---
+layout: post
+date:   2016-07-25
+title: 7-25-2016
+complete: 0
+---
+Prepared cell culture of collaborators cells so that we can mini prep them tomorrow. 
+
+Third Golden Gate reaction performed on npf, pcyA, RBS1, RBS2, and the plasmid. Allowed to incubate overnight at 16℃. 
+PCR amplified CBCR 3,4,6, and 8. All were successful and determined to PCR clean-up on CBCR 6 and 8 because they were cleaner bands  and perform a gel extraction on CBCR 3 and 4. 
+(Insert gel)

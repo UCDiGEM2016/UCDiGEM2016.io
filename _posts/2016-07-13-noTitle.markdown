@@ -1,0 +1,9 @@
+---
+layout: post
+date:   2016-07-13
+title: 7-13-2016
+complete: 0
+---
+
+PCR amplified npf and terminator for Bacillus subtilis. Annealing time modified to 55℃ with 55sec extension time. This amplification was successful. 
+(Insert gel)

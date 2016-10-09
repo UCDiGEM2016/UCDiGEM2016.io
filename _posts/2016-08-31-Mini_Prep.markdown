@@ -1,0 +1,22 @@
+---
+layout: protocol
+date:   2016-08-10
+title: Mini Prep
+category: protocol
+---
+Goal: Extract correct plasmid out of colony so you can transform more E.Coli cells
+Harvest
+Centrifuge the overnight LB-culture. (1min 4000RPM) Remove all medium.
+Resuspend
+Add 250 μL Resuspension Buffer (R3) with RNase A to the cell pellet and resuspend the pellet until it is homogeneous. Transfer to new 1.5 mL microcentrifuge tube.
+Lyse
+Add 250 μL Lysis Buffer (L7). Mix gently by inverting the capped tube until the mixture is homogeneous. Do not vortex. Incubate the tube at room temperature for 5 minutes.
+Precipitate
+Add 350 μL Precipitation Buffer (N4). Mix immediately by inverting the tube, or for large pellets, vigorously shaking the tube, until the mixture is homogeneous. Do not vortex. Centrifuge the lysate at >12,000 × g for 10 minutes.
+Bind
+Load the supernatant from step 4 onto a spin column in a 2-mL wash tube. Centrifuge the column at 12,000 × g for 1 minute. Discard the flow-through and place the column back into the wash tube.
+Wash and remove ethanol. Add 700 μL Wash Buffer (W9) with ethanol to the column. Centrifuge the column at 12,000 × g for 1 minute. Discard the flow-through and place the column into the wash tube. Centrifuge the column at 12,000 × g for 1 minute. Discard the wash tube with the flow-through.
+Elute
+Place the Spin Column in a clean 1.5-mL recovery tube. Add 50 μL of ultrapure H2O to the center of the column. Incubate the column for 5 min at room temperature.
+Recover
+Centrifuge the column at 12,000 × g for 2 minutes. The recovery tube contains the purified plasmid DNA. Discard the column. Store plasmid DNA at 4°C (short-term) or store the DNA in aliquots at −20°C (long-term).

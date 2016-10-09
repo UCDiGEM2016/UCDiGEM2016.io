@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-05-10
+title: 5-10-2016
+complete: 1
+---
+
+Meeting with on-campus collaborators to learn more about CBCR background info

@@ -1,0 +1,10 @@
+---
+layout: protocol
+date:   2016-08-10
+title: Transferring Colony to 4 mL Culture
+category: protocol
+---
+1. Pipette 4 mL of LB into labelled culture tubes
+2. Add 4-6 uL of antibiotic to each tube
+3. Use pipette tip or loop to take a small sample from colony on plate, transfer into tube
+4. Culture overnight in shaker and check the next day

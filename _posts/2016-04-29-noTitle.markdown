@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-04-29
+title: 4-29-2016
+complete: 1
+---
+
+Decided to base our project on CBCRs in relation to use as a food additive. 

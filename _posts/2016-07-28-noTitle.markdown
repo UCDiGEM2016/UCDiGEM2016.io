@@ -1,0 +1,7 @@
+---
+layout: post
+date:   2016-07-28
+title: 7-28-2016
+complete: 0
+---
+Bunch of stuff I dont want to type

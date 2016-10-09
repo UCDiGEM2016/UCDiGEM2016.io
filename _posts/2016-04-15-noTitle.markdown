@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-04-15
+title: 4-15-2016
+complete: 1
+---
+
+Meeting with potential on campus collaborators to discuss CBCR background and field. 

@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-06-13
+title: 6-13-2016
+complete: 1
+---
+
+The team attended the UCSF Bioengineering symposium and had an iGEM meet-up with the UCSD, UCSC, and UCLA teams to discuss our projects. 

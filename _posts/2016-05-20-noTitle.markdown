@@ -1,0 +1,11 @@
+---
+layout: post
+date:   2016-05-20
+title: 5-20-2016
+complete: 1
+---
+Definite project plan and timeline developed. We chose to focus on four main projects:
+	1. Characterization of novel CBCRs
+	2. Operon optimization in E. coli
+	3. CBCR expression in Bacillus
+	4. Investigate regulatory framework surrounding a project like ours and current consumer concerns.

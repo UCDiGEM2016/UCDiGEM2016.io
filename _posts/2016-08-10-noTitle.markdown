@@ -1,0 +1,9 @@
+---
+layout: post
+date:   2016-08-10
+title: 8-10-2016
+complete: 1
+---
+
+Prepared five buffer solutions in preparation for protein purification. 
+Also, prepared plates containing kanamycin and chloraphenol for upcoming transformations of CBCR plasmids and PCB+BV plasmid. 

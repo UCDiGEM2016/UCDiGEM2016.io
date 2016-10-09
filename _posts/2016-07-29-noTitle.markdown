@@ -1,0 +1,10 @@
+---
+layout: post
+date:   2016-07-29
+title: 7-29-2016
+complete: 0
+---
+
+Preformed gel extraction on ___
+
+Model finished and developed functional web app to run it. 

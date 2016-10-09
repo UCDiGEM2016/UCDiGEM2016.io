@@ -1,0 +1,7 @@
+---
+layout: post
+date:   2016-08-01
+title: 8-01-2016
+complete: 1
+---
+Prepared 25mL culture of npf colony from (date) in TB with kanamycin and carb.. . After 2 hrs of incubation, 2mL of 1M arabinose was added to induce cell growth. 

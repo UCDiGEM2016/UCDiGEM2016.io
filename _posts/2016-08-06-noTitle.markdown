@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-08-06
+title: 8-06-2016
+complete: 1
+---
+
+Completed Farmer’s Market surveys for our team.

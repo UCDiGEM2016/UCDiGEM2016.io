@@ -1,0 +1,13 @@
+---
+layout: post
+date:   2016-07-26
+title: 7-26-2016
+complete: 0
+---
+PCR amplified CBCR 9, 11, ocs, ga_2, ga_3, cyan, cha, and npf. All successful-- determined PCR cleanup for npf and gel extraction for the rest. 
+(Insert gel)
+
+Gel results from golden gate reaction on 7/25 hardly show any ligation products. We believe this is because the low DNA concentrations. We still transformed DHSalpha and plated to look for results tomorrow. 
+Also, minipreped collaborators plasmids containing PCB+BV for Amanda
+Also, sent false positive colony from (date) for sequencing. 
+(Insert gel)

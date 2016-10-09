@@ -1,0 +1,11 @@
+---
+layout: post
+date:   2016-07-20
+title: 7-20-2016
+complete: 0
+---
+Attempted first Golden Gate reaction on CBCR 4, 9, and 11 with ho, pcyA, RBS (34AB and 34BC), terminator, and PSB1C3. 
+Ran gel to find that gel shows 4-5 bands. Need to hypothesize reasons for why reaction is inefficient. 
+(Insert gel)
+
+Gel purified the previously amplified CBCRs 2,3,and 8 from (date)

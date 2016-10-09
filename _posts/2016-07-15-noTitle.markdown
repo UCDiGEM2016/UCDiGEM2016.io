@@ -1,0 +1,12 @@
+---
+layout: post
+date:   2016-07-15
+title: 7-15-2016
+complete: 1
+---
+
+On the remaining two CBCRs that didn’t amplify, Ga_g2 and Ga_g3 I amplified as before. This was successful so we gel purified the samples. 
+
+Made colonies of Bacillus subtillus by placing stock colonies on LB media and glycerol stock-- allowing them to grow for multiple days. 
+
+Team completed CITI (Collaborative Institutional Training Initiative) training and is certified to conduct consumer surveys.

@@ -1,0 +1,10 @@
+---
+layout: post
+date:   2016-07-27
+title: 7-27-2016
+complete: 1
+---
+
+To grow collaborators plasmids, we made the plate broth including the relevant antibiotics (carbenicillin and kanamycin). Left overnight to set up. 
+
+Preformed gel extraction on CBCR 6, 8, 9 and 11 from the amplification on 7/26. 

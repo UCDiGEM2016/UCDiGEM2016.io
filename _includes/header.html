@@ -1,0 +1,54 @@
+<header>
+  <div class="container-fluid">
+    <!-- TITLE -->
+    <div class="row row-centered logoDiv">
+      <div class="col-xs-12 col-centered">
+        <h1>
+          <img id ="logo" src = "{{ site.base_url }}/pictures/logo.png"/>
+        </h1>
+
+      </div>
+    </div>
+  <nav  class = "navbar">
+    <div class="row row-centered">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-10">
+       <ul class="nav navbar-nav" id = "nav">
+        
+          <li class = "navBtn homeLink"><a class="headLink" href="{{site.base_url}}/">Home</a></li>
+          <li role="presentation" class="dropdown navBtn projectLink">
+              <a class="dropdown-toggle headLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Project <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dMenu projMenu">
+                <li><a href="{{sites.base_url}}/project.html">Description</a></li>
+
+                <li><a href="">Parts</a></li>
+                <li><a href="">Results</a></li>
+                <li><a href="{{site.base_url}}/Experiments.html">Experiments</a></li>
+                <li><a href="{{site.base_url}}/Notebook.html">Notebook</a></li>
+              </ul>
+          </li>
+          <li role="presentation" class="dropdown navBtn">
+              <a class="dropdown-toggle headLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Software <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dMenu projMenu">
+                <li><a href="{{site.base_url}}/gene.html">CBCR Model</a></li>
+                <li><a href="{{site.base_url}}/match.html">iGEMMatch.org</a></li>
+              </ul>
+          </li>       
+          <li class = "navBtn teamLink" ><a class="headLink" href="{{site.base_url}}/Team.html">Team</a></li>
+          <li class = "navBtn attLink" ><a class="headLink" href="{{site.base_url}}/Att.html">Attributions</a></li>
+          <li class = "navBtn homeLink"><a class="headLink" href="{{site.base_url}}/">Human Practices</a></li>
+
+       
+      </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- /TITLE -->
+</div>
+
+
+</header>

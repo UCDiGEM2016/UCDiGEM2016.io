@@ -1,0 +1,7 @@
+---
+layout: post
+date:   2016-05-13
+title: 5-13-2016
+complete: 1
+---
+Looked into previous iGEM landscape to discover that only 20 teams have ever utilized the CBCR complex, 11 of which were biosensors and 9 were to influence cellular function. No teams have ever applied it to food, attempted expression in Bacillus, or put it into a concentrated form.

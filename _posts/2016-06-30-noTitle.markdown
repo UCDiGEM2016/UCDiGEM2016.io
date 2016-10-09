@@ -1,0 +1,10 @@
+---
+layout: post
+date:   2016-06-30
+title: 6-30-2016
+complete: 0
+---
+
+
+PcyA and ho were PCR amplified using a 55℃ annealing temperature. Our amplification is correct as pcyA is ___ bp and ho is ___ bp. 
+(insert gel)

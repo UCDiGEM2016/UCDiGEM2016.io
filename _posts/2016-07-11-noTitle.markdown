@@ -1,0 +1,9 @@
+---
+layout: post
+date:   2016-07-11
+title: 7-11-2016
+complete: 0
+---
+
+Tried to optimize PCR amplification of CBCR gblock since trial on 7/6 was incorrect. The amplification was done on CBCR2 at an annealing temp of 55, 60, and 65℃. These results were successful, leading us to believe that the issue before was with the DNA polymerase staying active through all 13 samples. 
+(Insert gel)

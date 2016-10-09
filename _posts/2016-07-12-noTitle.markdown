@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-07-12
+title: 7-12-2016
+complete: 0
+---
+PCR amplified CBCR3 and CBCR4 but changed the extension period from 30sec to 50sec. This was successful for CBCR3 and not CBCR4. This leads us to believe that some CBCRs amplify better than others
+(Insert gel)

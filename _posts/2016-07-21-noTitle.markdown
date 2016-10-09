@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-07-21
+title: 7-21-2016
+complete: 1
+---
+
+Transformed the four CBCRs from 7/20 into DHS alpha anyways. Plates turned out negative -- need to reevaluate golden gate methods.

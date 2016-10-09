@@ -1,0 +1,12 @@
+---
+layout: post
+date:   2016-07-19
+title: 7-19-2016
+complete: 0
+---
+
+Seven colonies grew on plate from 7/18. Need to colony PCR to confirm success. We are skeptical of success and believe it is ultimately a failure. 
+
+Amplified RBS (ab), RBS (cd), and RBS (kl)
+Preformed gel electrophoresis on Bacillus amplification from 7/13 and today’s amplifications. Npf and B0015 appear to be correct (___bp) ; however, the RBS fall below ladder minimum at 16bp so the successfulness cannot be determined.
+(Insert gel) 

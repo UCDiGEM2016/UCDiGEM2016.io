@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-07-14
+title: 7-14-2016
+complete: 1
+---
+
+Of the seven CBCR gblocks that correctly transformed, we extracted them from the gel and used a Nanodrop to find the concentrations.

@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-06-10
+title: 6-10-2016
+complete: 1
+---
+
+iGEMmatch.org functional and running. We plan on using the UCSF symposium to add more teams and get feedback. 

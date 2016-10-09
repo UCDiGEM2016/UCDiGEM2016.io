@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-07-8
+title: 7-8-2016
+complete: 1
+---
+
+Nanodropped pcyA(bc), pcyA(dg), ho(bc), ho(dg), npf (h beta), and PSB1C3 to determine concentrations in preperation for a Golden Gate Reaction. 

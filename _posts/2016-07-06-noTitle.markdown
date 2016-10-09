@@ -1,0 +1,9 @@
+---
+layout: post
+date:   2016-07-6
+title: 7-6-2016
+complete: 0
+---
+
+All 13 CBCR gblocks were amplified with the promoter (Pbad), RBS (B0034), and chitin binding domain. An annealing temperature of 55℃ was used. This amplification was unsuccessful as the CBCRs should be about 500bp. 
+(insert gel)

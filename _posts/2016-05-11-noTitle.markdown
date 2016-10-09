@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-05-11
+title: 5-11-2016
+complete: 1
+---
+
+Meeting with MARS scientist to discuss industry needs and concerns with dyes. Discovered that we do not need to worry about having our cells autolyse because they have specific machines already in place. Largely, we decided to keep our work-flow very similar to Spirulina so its fits into the existing framework. 

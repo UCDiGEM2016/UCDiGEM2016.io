@@ -1,0 +1,399 @@
+body
+{
+	min-width: 1300px;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+/* STYLES IGEM UC DAVIS WIKI */
+
+
+/* Template Style */
+.rounded
+{
+	border-radius:10px;
+}
+.open
+{
+	background-color: white;	
+}
+
+h1,h2,h3
+{
+	font-family: 'Poiret One', cursive;
+}
+p
+{
+	font-size:120%;
+}
+.navBtn
+{
+	margin: 0px 10px;
+	font-family: 'Poiret One', cursive;
+	font-size: 150%;
+	background-color: white;
+	border: none;
+	border-bottom: 3px solid lighten($blue,10%);
+	border-left: 3px solid lighten($blue,10%);
+	border-radius: 5px;
+	display: inline-block;
+	@include transition(background-color .3s ease);
+	&:hover,a:hover
+	{
+		text-decoration: none !important;
+		a,h4
+		{
+			//color:white;
+		}
+		background-color: lighten($blue,0%);
+		@include transition(background-color .3s ease);
+
+	}
+	a,h4{
+		color: $blue;
+
+	}		
+}
+.projLinks
+{
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+		a:hover,a:focus
+		{
+			background-color: $blue;
+			color:white;
+			//border-color: white;
+		}
+		a
+		{
+			border-color:white;
+			background-color: white;
+			color:lighten($blue,0%);
+			border:3px solid $blue;
+			display:inline-block;
+
+			padding: 3px;
+			font-size: 170%;
+
+		}
+
+}
+header{
+background-color: white;
+min-height: 25vh;
+// box-shadow: 0px 10px 15px -2px $dblue; 
+	.navBtn
+	{
+		margin: 0px 10px;
+		font-family: 'Poiret One', cursive;
+		font-size: 150%;
+		background-color: white;
+		border: none;
+		border-bottom: 3px solid lighten($blue,0%);
+		border-left: 3px solid lighten($blue,0%);
+		border-radius: 5px;
+		display: inline-block;
+		@include transition(background-color .3s ease);
+		&:hover,.headLink:hover
+		{
+			text-decoration: none !important;
+			.headLink,h4
+			{
+				color:white;
+			}
+			background-color: lighten($blue,0%);
+			@include transition(background-color .3s ease);
+
+		}
+		a,h4{
+			color: $blue;
+
+		}		
+	}
+	.nav-scrolled
+	{
+	  
+	  height:11vh;
+	}
+	.navbar
+	{
+		min-height:10vh;
+		//background: rgba(0,104,178, 0.2);
+		border:2px solid $blue;
+		padding-top:20px;
+		padding-bottom:10px;
+		#nav
+		{
+			float:none;
+			text-align:center;
+			> li
+			{
+				float:none;
+				display:inline-block;
+			}
+		}
+	}
+	#logo
+	{
+		height:200px;
+	}
+	h1
+	{
+		text-align: center;
+		font-family: 'Poiret One', cursive;
+		color: $blue;
+		span
+		{
+			color: $red;
+		}
+	}
+}
+
+
+
+
+.footer
+{
+	background-color:lighten($gray,50%);
+	div
+	{
+		text-align:center;
+	}
+
+
+}
+
+/* Page Style */
+.mainbod
+{
+	min-height:70vh;
+	h2
+	{
+		color: white;
+		font-family: 'Poiret One', cursive;
+		margin-top: 4vh;
+	}
+}
+.indexOdd
+{
+	background-color: lighten($blue,5%);
+}
+.body_1
+{
+	.row .img-Div
+	{
+		background-image: url('../pictures/Davis_Tower.png');
+		background-repeat:no-repeat;
+		background-position:left bottom;
+		background-size: contain;
+		min-height:70vh;
+	}
+
+	.abstract
+	{
+		color:white;
+		border-left: 2px solid white;
+		h1
+		{
+			font-family: 'Poiret One', cursive;
+
+		}
+		font-size: 120%;
+		min-height:70vh;
+	
+	}
+}
+.body_2
+{
+	color:white;
+	h2
+	{
+		text-align: center;
+	}
+
+	.bioImg
+	{
+		height:25vh;
+		margin: 10px;
+	}
+	.teamBio
+	{
+		border-right:1px solid white;
+	}
+	.evenBio .teamBio
+	{
+		h3
+		{
+		text-align: right;
+		}
+		border-right: 0;
+		border-left: 1px solid white;
+	}
+
+
+}
+.body_odd
+{
+	@include gradient-vertical($blue, lighten($blue,10%), 0%, 100%);
+	color:white;
+	min-height:20vh;
+}
+.body_team
+{
+	background-color:lighten($red,15%);
+	.teamHead
+	{
+//		border:2px solid white;
+		border-radius: 5px;
+		min-height:10vh;
+		margin-top: 20px;
+		text-align: center;
+		h2
+		{
+			color: white;
+			font-family: 'Poiret One', cursive;
+			border-left:5px solid white;
+			border-bottom:5px solid white;			
+			display: inline-block;
+			padding: 10px 10px;
+			border-radius: 10px;
+			@include transition(border .3s linear);
+			&:hover
+			{
+				border-left:0px solid white;
+				border-bottom:0px solid white;	
+				border-right:5px solid white;
+				border-top:5px solid white;	
+				@include transition(border .3s linear);							
+			}
+
+		}
+	}
+}
+
+.body_even
+{
+	background-color: white;
+	color:$blue;
+	h2
+	{
+			color:$blue;
+	}
+
+
+
+	//border:4px solid $blue;
+	min-height: 20vh;
+	.row .col-xs-12
+	{
+		text-align:center;
+	}
+	padding:5px;
+}
+.body_4
+{
+	min-height: 100vh;
+	background-color:$yellow;
+}
+.projP
+{
+	h3
+	{
+		border:2px solid $gray;
+		display:inline-block;
+		padding:10px;
+	}
+}
+.pLink
+{
+	border:none;
+	display:inline-block;
+	a
+	{
+		border:2px solid $blue;
+		border-radius:5px;
+		margin:5px;
+		padding:5px;
+		@include transition(background-color .3s ease);
+		@include transition(color .3s ease);
+		&:active,&:hover
+		{
+			text-decoration:none;
+			background-color: $blue;
+			//border:none;
+			color:white;
+			@include transition(background-color .3s ease);
+			@include transition(color .3s ease);
+		}
+	}
+	color:$blue;
+}
+
+/* PAGE STYLES */
+.page-header
+{
+	max-height:10vh;
+	height:100px;
+}
+.page-title
+{
+	color:$blue;
+	text-align:center;
+}
+#Notebook
+{
+	color:$gray;
+}
+.noteText,.posts_cont
+{
+	border:3px solid $blue;
+}
+.noteMenu
+{
+	max-height:70vh;
+	overflow:scroll;
+	@include gradient-vertical($blue, lighten($blue,10%), 0%, 100%);
+	color:white;
+	ul
+	{
+		list-style:none;
+		li
+		{
+			color:white;
+			padding:2px;
+			@include transition(background-color .3s ease);
+			:hover
+			{
+				text-decoration: none;
+				color:$gray;
+				background-color: white;
+				a
+				{
+					color:$gray;
+					@include transition(color .3s ease);
+
+				}
+				@include transition(background-color .3s ease);
+			}
+			a
+			{
+				color:white;
+				padding:3px 10px;
+				@include transition(color .3s ease);
+
+			}
+		}
+	}
+}
+

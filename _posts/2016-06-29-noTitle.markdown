@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-06-29
+title: 6-29-2016
+complete: 1
+---
+
+PcyA and ho were mini-preped and eluted with water. We then used a Nanodrop machine to determine the concentration and purity. We then used a gel electrophoresis machine to determine that the DNA arrived was the correct size. From there, we diluted pcyA and ho so there are in 10ng/uL

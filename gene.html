@@ -1,0 +1,35 @@
+---
+layout: page
+title: Gene Selection
+---
+
+<div class="container">
+	<div class="row row-centered body_even rounded">
+		<div class="col-centered col-xs-10">
+			<h1>Gene Selection</h1>
+			<p class="">Metagenomic mining was used to discover 13 protein sequences we believed were plausible GAF domain homologs in an effort to expand the known color range of the GAF domain. To assist in future enzymatic discovery, a predictive model was developed that outputs whether an unknown sequence is likely to reflect in the blue, red, or yellow spectrum. The 13 sequences were transformed into E.coli and subsequent analysis performed to find ____.</p>
+		</div>
+	</div>
+	<div class="row row-centered">
+		<div class="col-xs-10 col-centered projP">
+			<h3>Enzymatic Discovery</h3>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Since metagenomes provide diverse and largely undiscovered species, we used the Joint Genome Institute Integrated Microbiome database to mine the metagenome samples for sequences that were similar to known blue reflecting GAF domains. This process begins by BLAST searching a known GAF domain against deposited metagenome samples. This search will return an E-value, or the expected value that this alignment will occur by random. The lower the E-value means the less likely your alignment is a false positive, because of this only alignment with an E-value of 1e-50 of lower were used. The remaining alignments surrounding protein families, top genomic isolate hits, and metagenome sample annotation would be taken into account before choosing which homologs to use. After searching more than 100 metagenomes we narrowed it down to 13 sequences which came from the following environments:</p>
+			<ul>
+			<li>Hot spring microbial communities from Yellowstone National Park, Wyoming, USA</li>
+			<li>Groundwater microbial communities from subsurface biofilms in sulfidic aquifier in Frasassi Gorge, Italy</li>
+			<li>Estuarine microbial communities from Elkhorn Slough, Monterey Bay, California, USA</li>
+			<li>Bacteria ecosystem from Joint Genome Institute, California, USA</li>
+			<li>Hypersaline mat microbial communities from Guerrero Negro, Mexico</li>
+			</ul>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;Although we chose to only investigate 13 sequences, there were many more we could have chosen. The amount of genomic and metagenomic data deposited in sites like JGI, NCBI and HMMER is massive and continually growing. In total there is about ___ genomes released, and ___ metagenomes released, which is currently increasing exponentially. It’s relatively easy to find protein homologs, but it’s much harder to choose which genes to investigate. This is complicated even further if you are searching for a subgroup within one protein family, like searching for just blue reflecting GAF domains. For this reason, we developed a model to assist in choosing the GAF protein homologs based on subgroup identity.</p>
+        	<h3>Model development</h3> <h4 class = "pLink"><a href="http://ucdigem.pythonanywhere.com/" target="_blank">Web deployed model</a></h4>
+			<p>
+			In order to refine the GAF homologs down to the subgroup level, ideally we needed a model that could identity patterns in protein sequences which affect the subgroup identity. In searching for existing programs, we discovered over twenty programs dating back to 1996 that were designed for a similar purpose. However, many were not maintained over the years or open access. Of the 12 programs our data was tested set on, most failed to correctly separate the protein family based on subgroup. Since we were unable to find a program which fit our needs, we developed our own.</p><p>
+        	Historically, consensus sequences and pro-site maps were used to identify influential patterns in sequences. While these methods are effective for highly conserved sequences and regions, they require arbitarty data cut-offs which makes their methods a bit course. One method which does not require these cut-offs are profile Hidden Markov Models, or profile HMMs. Profile HMM’s are statistical models that give the probability of any amino acid or DNA base at any position in the sequence. For example, if there is a lysine at position 2 in the sequence alignment that informs not only the probability of lysine at position 2, but the probability of other similar amino acids at that position. Profile HMM’s have become widely used in identifying protein families, even Pfam the protein family database used HMM’s to curate their database.</p><p>
+			Specifically, the model began with about 100 previously characterized GAF protein sequences which we then divided into blue, yellow, and red subgroups. The blue subgroup represents any GAF sequence that absorbs in the red spectra, and thus reflects and appears blue. For every subgroup we created multiple sequence alignments that were influenced by the protein structure using Promals3D. Using the protein structure in the multiple alignment allows relatively divergent clusters to be aligned with more accuracy because it takes into account sequence-based constraints derived from the 3D structures. After creating the three multiple sequence alignments, a profile HMM was created using HMMER. The model then aligns the user given sequence and compares it to all three profile HMMs. By calculating the log2 odds ratio of the observed to expected E value a quantifiable score is produced. This model now has a web interface and is downloadable on github here.  </p><p>
+        	To assess the accuracy of our model a four-fold cross validation was preformed. This meaning we removed a random quarter of our CBCR sequences and only used the remaining 3/4ths for the profile HMM creation. We would then use the random quarter of sequences as the query against this reduced model and calculated how accurately the model could blindly predict the sequences. We repeated this three other times until all random and no overlapping quarters were used as the query. Through this validation we calculated our model has a 75% accuracy which is 42% more accurate than would occur by random chance.
+</p>
+		</div>
+	</div>
+</div>

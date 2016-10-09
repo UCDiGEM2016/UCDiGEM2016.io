@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-07-23
+title: 7-23-2016
+complete: 1
+---
+Freezer stocks of collaborators colony strains were prepped and put in the freezer. 
+A lot of colonies formed on plates from 7/21 which makes us suspicous there is contamination. We decided to run a colony PCR on npf colony to try and find results. We discovered it was once again a false positive. Need to brainstorm why this could be. 

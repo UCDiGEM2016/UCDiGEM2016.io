@@ -1,0 +1,9 @@
+---
+layout: post
+date:   2016-07-5
+title: 7-5-2016
+complete: 0
+---
+
+PCR amplified pcyA(bc), pcyA(dg), ho(bc), ho(dg), npf (h beta), and PSB1C3 with an annealing temp of 55 ℃ was used. This amplification was a success
+(insert gel)

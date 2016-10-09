@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-07-24
+title: 7-24-2016
+complete: 0
+---
+Repeat PCR amplification on CBCR gblocks so we can have a higher concentration of DNA. All amplifications were unsuccessful-- hypothesized to be due to denatured DNA polymerase. 
+(Insert gel)

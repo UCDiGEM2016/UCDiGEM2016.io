@@ -1,0 +1,24 @@
+---
+layout: default
+title: Experiments
+---
+<div class="posts_cont container_fluid">
+<div class="row">
+	<div class="col-xs-3 noteMenu">	
+		<br>
+		<ul>
+		{% for post in site.posts %}
+			{% if (post.category == "protocol") %}
+		<li><a href="{{post.url}}">{{ post.title }}</a></li>
+		{% endif %}
+
+		{% endfor %}
+		</ul>
+	</div>
+	<div class="col-xs-9 noteText">
+		<h3>Protocols</h3>
+		<p>Click any title to the left to begin exploring our protocols</p>
+	</div>
+</div>
+
+</div>

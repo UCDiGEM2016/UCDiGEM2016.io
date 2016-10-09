@@ -1,0 +1,8 @@
+---
+layout: post
+date:   2016-06-17
+title: 6-17-2016
+complete: 1
+---
+
+12 Novel CBCR sequences from microbial samples selected and ordered
