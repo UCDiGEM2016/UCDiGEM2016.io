@@ -377,6 +377,13 @@ min-height: 25vh;
 	color:$blue;
 	text-align:center;
 }
+#genomeImg
+{
+	img
+	{
+		max-width:100%;
+	}
+}
 #Notebook
 {
 	color:$gray;
