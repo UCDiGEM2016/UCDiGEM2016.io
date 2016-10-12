@@ -321,7 +321,10 @@ min-height: 25vh;
 	display:inline-block;
 	a
 	{
-		border:2px solid $blue;
+		border-bottom:2px solid $blue;
+		border-right:2px solid $blue;
+		color:$blue;
+		font-family:'Poiret One', cursive;
 		border-radius:5px;
 		margin:5px;
 		padding:5px;
