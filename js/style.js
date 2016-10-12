@@ -114,10 +114,12 @@ $(document).ready(
     		}, 1000);
   		});//end attLink.click
 
-*/
+
 
 
 
 	}
+
 );// end doc.ready
+*/
 
