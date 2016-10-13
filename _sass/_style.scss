@@ -19,6 +19,10 @@ body
 
 
 /* Template Style */
+.centered
+{
+	text-align:center;
+}
 .rounded
 {
 	border-radius:10px;
@@ -370,7 +374,14 @@ min-height: 25vh;
 {
 	height:150px;
 	float:right;
-
+}
+#cupcake
+{
+	height:200px;
+}
+#bactShop
+{
+	height:250px
 }
 .blue	
 {
