@@ -9,16 +9,36 @@ title: Experiments
 		<ul>
 		{% for post in site.posts %}
 			{% if (post.category == "protocol") %}
-		<li><a href="{{post.url}}">{{ post.title }}</a></li>
+		<li><a href="#{{post.title}}">{{ post.title }}</a></li>
 		{% endif %}
 
 		{% endfor %}
 		</ul>
 	</div>
-	<div class="col-xs-9 noteText">
+	<div id="top" class="col-xs-9 noteText">
 		<h3>Protocols</h3>
 		<p>Click any title to the left to begin exploring our protocols</p>
 	</div>
+</div>
+</div>
+<div class="container">
+	{% for post in site.posts %}
+		{% if (post.category == "protocol") %}
+	<div id = "{{post.title}}"class="row protocols row-centered">
+		<div class="col-centered col-xs-12">
+		<h3>{{post.title}}</h3>	
+		<p>{{post.content}}</p>
+			<div class="col-xs-3 col-centered projLinks">
+				<a href="#top" class="navBtn">Back to Top</a>
+			</div>
+
+		</div>
+	</div>
+	<br>
+	{% endif %}
+
+	{% endfor %}	
+
 </div>
 
 </div>

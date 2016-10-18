@@ -41,8 +41,16 @@
                 <li><a href="{{"gene.html"| prepend: site.baseurl }}">CBCR Model</a></li>
                 <li><a href="{{"match.html"| prepend: site.baseurl }}">iGEMMatch.org</a></li>
               </ul>
-          </li>       
-          <li class = "navBtn teamLink" ><a class="headLink" href="{{"team.html"| prepend: site.baseurl }}">Team</a></li>
+          </li>
+          <li role="presentation" class="dropdown navBtn">
+              <a class="dropdown-toggle headLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                People <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dMenu projMenu">
+                <li><a href="{{"team.html"| prepend: site.baseurl }}">Team</a></li>
+                <li><a href="{{"att.html"| prepend: site.baseurl }}">Attributions</a></li>
+              </ul>
+          </li>         
           <li role="presentation" class="dropdown navBtn projectLink">
               <a class="dropdown-toggle headLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 Human Practices <span class="caret"></span>

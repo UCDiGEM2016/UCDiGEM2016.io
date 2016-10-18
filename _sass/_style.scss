@@ -253,6 +253,21 @@ min-height: 25vh;
 
 
 }
+.advisor
+{
+	text-align:center;
+	height:300px;
+	width:300px;
+	img
+	{
+		height:220px;
+		width:200px;
+	}
+	border:3px solid $blue;
+	border-radius:5px;
+	margin:5px;
+
+}
 .body_odd
 {
 	@include gradient-vertical($blue, lighten($blue,10%), 0%, 100%);
@@ -444,6 +459,10 @@ min-height: 25vh;
 .blue	
 {
 	color:$blue;
+}
+.protocols
+{
+	border-bottom:2px solid $gray;
 }
 .page-header
 {

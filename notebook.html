@@ -4,21 +4,665 @@ title: Notebook
 ---
 
 
-<div class="posts_cont container_fluid">
-<div class="row">
-	<div class="col-xs-2 noteMenu">	
-		<br>
-		<ul>
-		{% for post in site.posts %}
-		{% if (post.category != "protocol") %}
-		<li><a href="{{post.url}}">{{ post.date | date: "%b %-d, %Y" }} : {{ post.complete }}</a></li>
-		{% endif %}
-		{% endfor %}
-		</ul>
+<div class="container_fluid">
+<div class="row row-centered body_odd">
+	<div class="col-xs-10 col-centered">
+		<h1>Welcome to our lab notebook</h1>
+		<p>Below is a chronological journey through our experimental progress.</p>
 	</div>
-	<div class="col-xs-10 noteText">
-		<h3>Welcome to our lab notebook</h3>
-		<p>Click any date to the left to begin exploring our progress through iGEM</p>
+</div>
+<br><br>	
+<div class="row-centered">
+	<div class="col-xs-10 col-centered">
+		<p>April</p>
+<table class = "table table-striped table-bordered">
+<tbody>
+<tr>
+<td>
+<p>4/1</p>
+</td>
+<td>
+<p>First iGEM meeting - Discussion of team progress and possible projects to perform for iGEM.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4/15</p>
+</td>
+<td>
+<p>Meeting with potential on campus collaborators to discuss CBCR background and field.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4/29</p>
+</td>
+<td>
+<p>Team agreement to base our summer research focus on CBCR expression in E. Coli and Bacillus. We decided that this would be an ideal project for our group because there are already a few experts at UC Davis on CBCR&rsquo;s, among the feasibility and compatibility of using CBCR&rsquo;s as an iGEM summer research project.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>May</p>
+<table class = "table table-striped table-bordered">
+<tbody>
+<tr>
+<td>
+<p>5/10</p>
+</td>
+<td>
+<p>Meeting with on-campus collaborators to learn more about CBCR background information. Met with a researcher named Nathan C. Rockwell who is an expert on CBCR&rsquo;s and have published multiple papers on how CBCR&rsquo;s work through our institution, UC Davis. l</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5/11</p>
+</td>
+<td>
+<p>Meeting with MARS scientist to discuss industry needs and concerns with dyes as food colorants. In the process of these interviews, we discovered that we do not need to worry about having our cells autolyse because the MARS industry has specific machines already in place to control for this. The industry standard for organism-produced dyes has been Spirulina, therefore we decided to keep our workflow in Bacillus and E. Coli similar to Spirulina so our fits into the existing industry framework .</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5/13</p>
+</td>
+<td>
+<p>Explored iGEM prior art and discovered that only 20 teams have ever utilized the CBCR complex, 11 of which were biosensors, and 9 were to influence cellular function. No teams have ever adapted CBCRs for any form of use in food. Previous iGEM teams have also not attempted expression in Bacillus, let alone, produce CBCRs in a concentrated form.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5/14</p>
+</td>
+<td>
+<p>First UCSC collaboration meeting (over skype). Met to discuss potential routes of collaboration on the human practices frontier and for science. Due to strong overlap in our scope of work, we determined that we would be able to establish meaningful collaboration on the human practices frontier to help both teams. UCSC is also using <em>Bacillus subtilis </em>as an expression chassis, as is our team. We therefore planned to share materials, protocols, and experimental successes in the course of the summer to establish our collaboration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5/20</p>
+</td>
+<td>
+<p>Project plan and Gantt chart (timeline) developed for summer iGEM experimentation. We chose to focus on four main projects:</p>
+<ol>
+<li>Characterization of novel CBCRs</li>
+<li>Operon optimization in E. coli</li>
+<li>CBCR expression in Bacillus</li>
+<li>Investigate regulatory framework surrounding a project like ours and current consumer concerns.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>
+<p>5/20 - Brent</p>
+</td>
+<td>
+<p>Preliminary research was performed to identify non-sporulating, protease deficient, <em>Bacillus subtilis </em>strains for research use. Dr. Daniel Zeigler, from the <em>Bacillus Genetic Stock Center</em> was contacted for more information on this. Dr. Zeigler recommended the following Bacillus strains, which we ended up using for our Bacillus studies.</p>
+<br />
+<p><strong>B. subtilis K07 - BGSC Accession # 1A1134</strong>&ndash; Generated from the commonly used laboratory host PY79. This strain has all it's seven associated proteases knocked out and is free from antibiotic resistance or integrated plasmids. This strain does produce spores however.</p>
+<br />
+<p><strong>B. subtilis PY79 - BGSC Accession # 1A747 </strong><strong>-</strong> which is the wildtype strain of the K07 protease knockout. We are selecting this strain so we have a control for comparison.</p>
+<br />
+<p><strong>B. subtilus spo0A3 </strong>- <strong>BGSC Accession # 1S1</strong><strong> - </strong>This strain comprises spo0A mutants, therefore they do not produce alkaline or neutral proteases (most abundant). They also do not sporulate. Wall-associated proteases are still present. This strain is the result of mutations in the Spo0A locus and have normal antibiotic sensitivities. Note that Spo0A have reduced genetic competence, so it may be advisable to use electroporation to transform them.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>June</p>
+<table class = "table table-striped table-bordered">
+<tbody>
+<tr>
+<td>
+<p>6/10- Samir</p>
+</td>
+<td>
+<p>iGEMmatch.org functional and running. We plan on using the UCSF symposium to add more teams and get feedback.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6/13</p>
+</td>
+<td>
+<p>Our iGEM team attended the UCSF Bioengineering symposium and had an iGEM meet-up with the UCSD, UCSC, and the UC Berkeley team to discuss our projects.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6/17</p>
+</td>
+<td>
+<p>12 Novel CBCR sequences from microbial samples selected and ordered</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6/23 - Brent</p>
+</td>
+<td>
+<p>pHCMC04, an 8,000 bp vector, was chosen as our integration chassis for our Bacillus experimentation. pHCMC04 is compatible in both E. Coli and in Bacillus for transformation. We annotated this vector for a region to insert our Bacillus DNA of interest in. We also prepared vectors to remove the Bsal site present on this vector and submitted this order to IDT.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6/29 - Brent</p>
+</td>
+<td>
+<p>PcyA and HO were mini-preped and eluted with water. A nanodrop test was run on these samples to determine concentration and purity. The results illustrated 132.29 ng/&mu;l for PcyA i15004 and 212.32 ng/&mu;l for HO.</p>
+<br />
+<p>A gel electrophoresis sample was next performed with these constructs, and SYBR safe was used as a visualizing agent for the DNA. 0.375 grams of Agrose in 50 ml of 1x TAE Buffer was heated to a boil to produce the homogenous gel mixture, 3 &mu;l of SYBR safe visualizing gel agent was added, and this solution was cooled to produce the solidified gel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6/30- Brent</p>
+</td>
+<td>
+<p>PcyA and HO from 6/30 were PCR amplified using a 55℃ annealing temperature. For each PCR, 10 &mu;l of HF buffer was added, 1 &mu;l of 10 nM DNTP&rsquo;s, 0.5 &mu;l of DNA Polymerase, 23.5 &mu;l of milliQ H20, and 9 additional microliters of milliQ H20. 2.5 &mu;l of a forward primer was added, 2.5 &mu;l of a reverse primer was added, and 1 &mu;l of template DNA.</p>
+<br />
+<p>PCR was implemented with a ProFlex PCR system with the following parameters:</p>
+<ol>
+<li>Initial Denaturation at 98 deg. C. for 30 seconds</li>
+<li>Denaturation at 98 deg. C. for 10 seconds</li>
+<li>Primer Annealing at 55 deg. C. for 30 seconds</li>
+<li>Extension at 72 deg. C. for 30 seconds per 1,000 bp of DNA</li>
+<li>Final extension at 72 deg. C. for 5 minutes</li>
+<li>Held at 4 deg. C. until used</li>
+</ol>
+<br />
+<p>Gel electrophoresis was used to verify appropriate band sizes and amplification of the DNA. HO = 720 bp and PcyA = 750 bp. Bands appeared in appropriate places with amplified DNA, indicating successful amplification of the PcyA and HO constructs.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>July</p>
+<table class = "table table-striped table-bordered">
+<tbody>
+<tr>
+<td>
+<p>7/5- Jon</p>
+</td>
+<td>
+<p>PCR amplified PcyA(bc), PcyA(dg), HO(bc), HO(dg), NPF (h beta) [a CBCR], and PSB1C3 with an annealing temp of 55 ℃ was used. Electrophoresis of these samples indicated that these amplifications were successful.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/6 - Amanda</p>
+</td>
+<td>
+<p>All 13 CBCR gblocks were amplified with the promoter (Pbad), RBS (B0034), and chitin binding domain. An annealing temperature of 55℃ was used. This amplification was unsuccessful as the CBCRs should be about 500bp, however the gel electrophoresis run on these samples did not indicate any bands in this region.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/8 - Jon</p>
+</td>
+<td>
+<p>Nanodropped PCR amplified PcyA(bc), PcyA(dg), HO(bc), HO(dg), NPF (h beta) [a CBCR], to determine concentrations in preparation for a Golden Gate Reaction.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/11 - Amanda</p>
+</td>
+<td>
+<p>Tried to optimize PCR amplification of CBCR gblock since the experimental PCR amplification conducted on 7/6 was unsuccessful. The amplification was performed on CBCR2 at an annealing temp of 55, 60, and 65℃. These results were successful. It is hypothesized that the issue encountered on 7/6 was DNA polymerase staying active, due to the previous annealing temperatures, among the 13 CBCR samples.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/12- Samir</p>
+</td>
+<td>
+<p>PCR amplified CBCR3 and CBCR4 but changed the extension period from 30sec to 50sec. This was successful for CBCR3 and not CBCR4. This leads us to believe that some CBCRs amplify better than others.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/13- All</p>
+</td>
+<td>
+<p>To date, PCR amplification of CBCR&rsquo;s have only been successful with select CBCR&rsquo;s. An attempt was made to PCR amplify the previously unsuccessful CBCR&rsquo;s to determine if the extension period was not long enough. CBCR 4, CBCR 6, CBCR 8, CBCR 9, CBCR 11, OSC 7112, GAG 2, GAG 3, Cyan, Cha, and NPF CBCR samples were tested by PCR Amplification. All sequences amplified successfully, with the exception of GAG 2 and GAG 3, when the amplification was performed with an extension period of 55 seconds.</p>
+<br />
+<p>On the Bacillus side of the experimentation, the CBCR - NPF, and the terminator B0015, was amplified with the appropriate primers. The standard PCR protocol was implemented, with a primer annealing time set to 55 seconds and a temperature of 55 deg. C.</p>
+<br />
+<p>The construct below, which is the gene designation for Bacillus experimentation, contains 3 RBS sites as designated below:</p>
+<p>Each RBS is comprised of two primers which were designed to be annealed together. For each of the RBS sites, two sets of primers were combined in equal concentration and annealed with 98 deg. C. for 10 minutes, and then cooled in a temperature ramping setup to room temperature (21 deg. C.).</p>
+<br />
+<p>PCR Amplifications of the Bacillus CBCR - NPF and the terminator B0015 were imaged by gel electrophoresis, the basepairs of the amplified segments were juxtaposed to the ladder, and acknowledged as successful after comparison.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/14- Samir</p>
+</td>
+<td>
+<p>The 7 CBCR gblocks that were successfully amplified (NPF, CBCR 4, CBCR 6, CBCR 9, CBCR 11, OSC, Cha, and Cyan 2) were gel extracted and Nanodropped to establish concentrations.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/15- Amanda</p>
+</td>
+<td>
+<p>On 7/13, CBCR 4, CBCR 6, CBCR 8, CBCR 9, CBCR 11, OSC 7112, GAG 2, GAG 3, Cyan, Cha, and NPF CBCR were PCR amplified. From these samples, GAG 2 and GAG 3 did not PCR amplify, however the others amplified successfully and was verified by gel electrophoresis juxtoposition to a DNA ladder. The extension time for these samples were increased by 20 seconds. Upon this adjustment, amplification appeared successful upon implementation of a Gel Electrophoresis on these samples. All other reagent concentrations remained unchanged from the prior experimentation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/15-Brent</p>
+</td>
+<td>
+<p>Made colonies of Bacillus subtillus by placing stock colonies on LB media and glycerol stock-- allowing them to grow for multiple days. Prepared PCY79, Spo0A3, and KO7 Bacillus strains for the UC Santa Cruz iGEM team to use. These strains were propagated and distributed to the UCSC iGEM team. We asked Dr. Daniel Zeigler for permission to distribute these strains and obtained written permission for this distribution on July 14th. Competence Preparation and Transformation protocols for Bacillus subtilis was also shared with the UCSC iGEM team as part of our collaboration.</p>
+<br />
+<p>A <em>Cryofreeze Procedure</em> was implemented as follows:</p>
+<ol>
+<li>A single colony from Bacilus subtilis was isolated from each strain type: Spo0A3, PCY79, and KO7.</li>
+<li>Single colonies were placed into a 3 ml LB media solution with no antibiotics within a test tube. This culture was grown up at 37 deg. C. at approximately 180 rpm, in a MaxQ 8000 thermal cycler.</li>
+<li>A control was prepared with LB media only (no bacteria)</li>
+<li>Each culture was grown up until the LB media appeared to be sufficiently cloudy.</li>
+<li>Cryofreeze tubes were obtained from each culture, ensuring 2 ml total of LB-Bacillus culture and Glycerol combined made it into each Cryofreeze tube. 312.5 microliters of 80% glycerol stock was combined with 1,687.5 microliters of LB-Bacillus culture such that glycerol would comprise 12.5% of the final 2 ml solution.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/15</p>
+</td>
+<td>
+<p>Team completed CITI (Collaborative Institutional Training Initiative) training and is certified to conduct consumer surveys.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/18- Jon</p>
+</td>
+<td>
+<p>Initial Golden Gate Reaction on (date )looked incomplete but, we decided to transform it anyways. Reaction product transformed into bHS alpha and left overnight.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/19- Jon</p>
+</td>
+<td>
+<p>Seven colonies grew on plate from 7/18. Need to colony PCR to confirm success. We are skeptical of success and believe it is ultimately a failure.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/19- Brent</p>
+</td>
+<td>
+<p>Amplified RBS (ab), RBS (cd), and RBS (kl)</p>
+<p>Preformed gel electrophoresis on Bacillus amplification from 7/13 and today&rsquo;s amplifications. Npf and B0015 appear to be correct (___bp) ; however, the RBS fall below ladder minimum at 16bp so the successfulness cannot be determined.</p>
+<p>(Insert gel)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/20- Amanda &amp; Jon</p>
+</td>
+<td>
+<p>Attempted first Golden Gate reaction on CBCR 4, 9, and 11 with ho, pcyA, RBS (34AB and 34BC), terminator, and PSB1C3.</p>
+<p>Ran gel to find that gel shows 4-5 bands. Need to hypothesize reasons for why reaction is inefficient.</p>
+<p>(Insert gel)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/20- Amanda</p>
+</td>
+<td>
+<p>Gel purified the previously amplified CBCRs 2,3,and 8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/21 - Jon</p>
+</td>
+<td>
+<p>Transformed the four CBCRs from 7/20 into DHS alpha anyways. Plates turned out negative -- need to reevaluate golden gate methods.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/21 - All</p>
+</td>
+<td>
+<p>Met with <em>Monsanto</em> at their <em>Monsanto Seminis </em>site in Woodland. We were hosted on a tour by the company in order to hear about the molecular and genetic biology they perform with plant research. We were provided with $1,000 for our iGEM team, no strings attached, from the company and were provided with opportunities to continue engaging with the company for further research and/or assistance with our iGEM project. We were taken on a day-tour of their facilities to learn about their operations and draw connections to the scope of iGEM.</p>
+<br /><br /><br /><br /></td>
+</tr>
+<tr>
+<td>
+<p>7/23- Jon</p>
+</td>
+<td>
+<p>Freezer stocks of collaborators colony strains were prepped and put in the freezer.</p>
+<p>A lot of colonies formed on plates from 7/21 which makes us suspicous there is contamination. We decided to run a colony PCR on npf colony to try and find results. We discovered it was once again a false positive. Need to brainstorm why this could be.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/24- Samir</p>
+</td>
+<td>
+<p>Repeat PCR amplification on CBCR gblocks so we can have a higher concentration of DNA. All amplifications were unsuccessful-- hypothesized to be due to denatured DNA polymerase.</p>
+<p>(Insert gel)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/25- Amanda &amp; Jon</p>
+</td>
+<td>
+<p>Prepared cell culture of collaborators cells so that we can mini prep them tomorrow.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/25 - Jon</p>
+</td>
+<td>
+<p>Third Golden Gate reaction performed on npf, pcyA, RBS1, RBS2, and the plasmid. Allowed to incubate overnight at 16℃.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/25- Samir &amp; Brent</p>
+</td>
+<td>
+<p>PCR amplified CBCR 3,4,6, and 8. All were successful and determined to PCR clean-up on CBCR 6 and 8 because they were cleaner bands and perform a gel extraction on CBCR 3 and 4.</p>
+<p>(Insert gel)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/26- Samir and Brent</p>
+</td>
+<td>
+<p>PCR amplified CBCR 9, 11, ocs, ga_2, ga_3, cyan, cha, and npf. All successful-- determined PCR cleanup for npf and gel extraction for the rest.</p>
+<p>(Insert gel)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/26- Jon</p>
+</td>
+<td>
+<p>Gel results from golden gate reaction on 7/25 hardly show any ligation products. We believe this is because the low DNA concentrations. We still transformed DHSalpha and plated to look for results tomorrow.</p>
+<p>Also, minipreped collaborators plasmids containing PCB+BV for Amanda</p>
+<p>Also, sent false positive colony from (date) for sequencing.</p>
+<p>(Insert gel)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/27-Amanda</p>
+</td>
+<td>
+<p>To grow collaborators plasmids, we made the plate broth including the relevant antibiotics (carbenicillin and kanamycin). Left overnight to set up.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/27- Brent &amp; Samir</p>
+</td>
+<td>
+<p>Preformed gel extraction on CBCR 6, 8, 9 and 11 from the amplification on 7/26.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/28- Jon</p>
+</td>
+<td>
+<p>Made a broth with antibiotics containing:</p>
+<ul>
+<li>475 ml H20</li>
+<li>5 g Tryptone</li>
+<li>5 g NaCl</li>
+<li>2.5 g Yeast Extract</li>
+<li>7.5 g Agar</li>
+</ul>
+<p>The broth was stirred using a stir bar until dissolved. H20 was added until the total volume reached a volume of 50 ml and a pH of ~ 7.0 was verified. This solution was covered with foil and tape and autoclaved at 121 degrees Celcius on a &lsquo;sterilize and dry&rsquo; cycle.</p>
+<br />
+<p>LB plates with Kanamycin and Carbenicillin were made.</p>
+<br />
+<p>HO and PcyA colonies were produced for miniprep.</p>
+<br />
+<p>A transformation protocol for E. coli called the <em>Denter protocol</em> was implemented as follows:</p>
+<ul>
+<li>0.5 &nbsp;&mu;l DNA for transformation</li>
+<li>1 &mu;l T4 buffer</li>
+<li>0.5 &mu;l BSA1</li>
+<li>0.5 &mu;l T4 Ligase</li>
+<li>1 &mu;l 10x BSA</li>
+<li>Addition of H20 intil 10 &mu;l volume reached.</li>
+</ul>
+<p>Cycling Protocol:</p>
+<ol>
+<li>40 deg. C for 2 minutes</li>
+<li>20 deg. C for 5 minutes</li>
+<li>Repeat (1+2) 25x</li>
+<li>Then 60 deg. C for 10 minutes</li>
+<li>Finally 85 deg. C for 10 minutes</li>
+</ol>
+<br />
+<p>Results: Transformation successful - colonies grew on all plates and were resistant to all antibiotics used, indicating successful transformation. Negative controls were plated with each of Nathan&rsquo;s individual strains onto the Kanamycin and Carbenicillin prepared plates.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/29- Brent</p>
+</td>
+<td>
+<p>Preformed gel extraction on ___</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7/29- Amanda</p>
+</td>
+<td>
+<p>Model finished and developed functional web app to run it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>August</p>
+<table class = "table table-striped table-bordered">
+<tbody>
+<tr>
+<td>
+<p>8/1- Amanda</p>
+</td>
+<td>
+<p>Prepared 25mL culture of npf colony from (date) in TB with kanamycin and carb.. . After 2 hrs of incubation, 2mL of 1M arabinose was added to induce cell growth.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/6 - All</p>
+</td>
+<td>
+<p>Our UC Davis iGEM Team completed all of our IRB approved Human Practice surveys at the city of Davis Farmers Market.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/6 - Brent</p>
+</td>
+<td>
+<p>Performed a variety of Golden Gate techniques in an effort to synthesize the Bacillus Genetic Construct. For reference, the complete DNA assembly should appear as follows (excluding the insertion plasmid pHCMC04):</p>
+<p>Golden gates were performed to construct pVEG through HO, HO through PcyA, PcyA through the first terminator B0015, and the last RBS through the last terminator B0015.</p>
+<p>The results of a Gel Electrophoresis illustrate that the HO through PcyA and PcyA through the first terminator B0015 was successful. An amplification was performed with each and turned our successful.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/10- Amanda</p>
+</td>
+<td>
+<p>Prepared five buffer solutions in preparation for protein purification.</p>
+<p>Also, prepared plates containing kanamycin and chloramphenicol for upcoming transformations of CBCR plasmids and PCB+BV plasmid.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/11 - Brent</p>
+</td>
+<td>
+<p>The following assembly for <em>Bacillus subtilis</em> was attempted:</p>
+<br />
+<p>Gel electrophoresis indicates that this Golden Gate reaction worked, thus completing the setup:</p>
+<p>Later results from this month illustrate that pVEG did not assemble with this complex appropriately, this only the first RBS through the first terminator B0015 was assembled appropriately.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/12/2016</p>
+</td>
+<td>
+<p>For <em>Bacillus subtilis</em> the following Golden Gate reactions were performed:</p>
+<p>Results were not promising from the Gel Electrophoresis as to if these assembles appropriately came together:</p>
+<br />
+<p>pHCMC04 was chosen as the plasmid for our Bacillus genetic construct to be inserted into. This vector yields compatibility with both E. Coli and Bacillus. This vector contained a Bsal site which was corrected for. A PCR cleanup was performed on this vector after performing site-directed-mutagenesis with specially designed primers. 1 &mu;l of DPN1 and 2.2 &mu;l of cutsmart was added to get rid of methylated DNA (containing the Bsal site). The vector was incubated with these reagents at 37 degrees celsius for 1 hour.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/12 - Brent</p>
+</td>
+<td>
+<p>A variety of golden gate reactions were performed for <em>Bacillus subtils</em> in an attempt to continue dna assembly with amplified segments as follows:</p>
+<br />
+<p>Gel electrophoresis results indicated below:</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/15 - Brent</p>
+</td>
+<td>
+<p>A pHT43 vector was order and primers were designed to clone out IPTG from this vector. PCR was performed, along with a gel electrophoresis to verify that the IPTG inducible promoter was cloned out of this vector. PCR cleanup was implemented to purify this clone out.</p>
+<br />
+<p>A variety of Bacillus transformation protocols were researched for potential bacillus genetic transformation routes.</p>
+<br />
+<p>The following protocols were obtained through literature search:</p>
+<br />
+<ul>
+<li><em>Transformation of Bacillus subtilis - Klein et al. 1992</em></li>
+<li><em>Transformation of Bacillus subtilis by Electroporation - Michele Stephenson and Paul Jarrett </em>(Institute of Horticultural Research)</li>
+<li><em>High transformation efficiency of Bacillus subtilis with integrative DNA using glycene betaine as osmoprotectant </em>- <em>Fatma Meddeb-Mouelhi, Carlos Dulcey, Marc Beauregard</em>.</li>
+<li><em>A modified electro-transformation method for Bacillus subtilis and its application in the production of antimicrobial lipopeptides - Richard et al. </em></li>
+<li>(Groningen Method)<em> Preparation of competent B. subtilis cells and transformation with plasmid DNA - the &lsquo;Gronigen Method&rsquo;)</em></li>
+<li>(Paris Method)<em> Preparation of competent B. subtilis cells and transformation with plasmid DNA - the &lsquo;Paris Method&rsquo;)</em></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/17 - Brent</p>
+</td>
+<td>
+<p>An issue was identified with the RBS of <em>Bacillus subtilis </em>- a base pair sequence was missing which would affect the golden gate assembly of the final RBS in the segment:</p>
+<p>This error was corrected by ordering a new sequence from IDT. This issue, which was identified through examination of the basepair sequences on the ordering sheets, may explain the failed assemblies encountered from the previous weeks.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/22 - Brent</p>
+</td>
+<td>
+<p>The following Golden Gate reactions were performed:</p>
+<br />
+<p><strong>Golden Gate Reaction B</strong><strong>: (CBCR @ 1,451 bp + B0015 @ 155 bp) = </strong><strong>1,606 bp</strong></p>
+<p><strong>Golden Gate Reaction</strong><strong> &epsilon; : (CBCR @ 1,451 bp + B0015 @ 155 bp) =</strong><strong> 1,606 bp</strong></p>
+<p><strong>Golden Gate Reaction B-1</strong><strong>: (IPTG @ 107 bp + RBS [KL] @ 21 bp + CBCR @ 1,451 bp + B0015 @ 155 bp) = </strong><strong>1,734 bp</strong></p>
+<p><strong>Golden Gate Reaction</strong><strong> &epsilon;-1 : (</strong><strong>*Cloned IPTG </strong><strong>@ 162 bp + RBS [KL] @ 21 bp + CBCR @ 1,451 bp + B0015 @ 155 bp) =</strong><strong> 1,789 bp</strong></p>
+<br />
+<p>Results indicate successful Golden Gate assembly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8/25- Brent</p>
+</td>
+<td>
+<p>A variety of unsuccessful Golden Gate assemblies were performed - specifics omitted for brevity:</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>September</p>
+<table class = "table table-striped table-bordered">
+<tbody>
+<tr>
+<td>
+<p>9/01 - Brent</p>
+</td>
+<td>
+<p>The following Golden Gate reactions were performed, isolated, amplified, and successfully extracted:</p>
+<p>An image of the gel-electrophoresis is indicated here:</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>9/02 - Brent</p>
+</td>
+<td>
+<p>For <em>Bacillus subtilis, </em>amplification of the following construct was performed:</p>
+<p><strong>Amplification Golden Gate Reaction Part 1</strong><strong>: (pVEG @ 263 bp + RBS[AB] @ 21 bp + HO @ 720 bp + RBS[BC] @ 21bp + Pcya @ 750 bp + B0015 @ 155 bp) = </strong><strong>1,930 bp</strong></p>
+<p>This segment would not amplify, contrary to gel electrophoresis results which suggested that the 1,930 base-pair construct was appropriately assembled. Something went wrong with the assembly since pVEG through B0015 would not amplify. A new route of synthesis was performed in an effort to correct this and achieve expression:</p>
+<p>Amplifications of these segments were named: CAS, FBI, FDA, FOR, GEM, GRE, HAT, and SAT arbitrarily. Each name denotes the assembly technique above, such as CAS being an amplification of GG rxn 006, and FDA being an amplification of GG rxn 777, for example. The following gel was obtained:</p>
+<br />
+<p>Gel extractions were performed with the following: FBI, FOR, and GEM where FBI includes an amplification of the Golden Gate of the first RBS to the first terminator, and FOR/GEM includes an amplification of HO through the first terminator.</p>
+<p>Effectively, the following was obtained:</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>9/09 - Brent</p>
+</td>
+<td>
+<p>A variety of primers were designed in order to amplify the Bacillus gene construct and in anticipation of it&rsquo;s insertion in the pHCMC04 vector. The designs were performed as follows:</p>
+<p>A Golden Gate assembly was performed using the DNA amplifications of previous constructs. The assembly was performed with alternate variations of the following:</p>
+<p>These sequences all came together successfully and were PCR amplified.</p>
+<br /><br /><br /><br /></td>
+</tr>
+<tr>
+<td>
+<p>9/15 - Brent</p>
+</td>
+<td>
+<p><strong>Protocol from UCSC - </strong><strong><em>Bacillus subtilis </em></strong><strong>competent preparation:</strong></p>
+<p>The following protocol was implemented, as shared by the UCSC iGEM team. <em>Protocol No. 4308 915.504 -</em> 08/2003</p>
+<br />
+<p>A solution of 0.5 M sorbitol, 0.5 M mannitol, and 10% glycerol was made. This medium serves as the <em>washing solution</em> and the <em>electroporation solution</em>.</p>
+<br />
+<p>Competent preparation of <em>Bacillus subtilis </em>was performed as follows:</p>
+<ol>
+<li>Overnight cultures of <em>Bacillus subtilis, </em>K07, PY79, and spo0A3 were produced with an optical density of 0.85-0.95.</li>
+<li>Cells were chilled on ice-water for 10 minutes and harvested by centrifugation at 4 degrees celcius and 5000 x g for 5 minutes.</li>
+<li>Cells were washed four times on ice-cold electroporation medium.</li>
+<li>Cells were suspended in glycerol-LB medium for storage in the -80 degree Celcius freezer.</li>
+<li>Competent cells, in theory, were thus produced.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>
+<p>9/26 - Brent</p>
+</td>
+<td>
+<p>A variety of PCRs were performed on the E. Coli CBCR&rsquo;s 2, 3, 4, 8, NPF, G2, and G3. All PCR&rsquo;s were successful as illustrated below. A gel extraction and PCR cleanup was performed with all of these CBCR&rsquo;s.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>October</p>
 	</div>
 </div>
 
