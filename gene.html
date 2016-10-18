@@ -3,37 +3,39 @@ layout: page
 title: Gene Selection
 ---
 
-<div class="container">
-	<div class="row row-centered body_even rounded">
+<div class="container-fluid">
+	<div class="row row-centered body_odd ">
 		<div class="col-centered col-xs-10">
 			<h1>Protein Discovery</h1>
-			<p class="">Metagenomic mining was used to discover 13 protein sequences we believed were plausible GAF domain homologs in an effort to expand the known color range of the GAF domain. To assist in future Protein discovery, a predictive model was developed that outputs whether an unknown sequence is likely to reflect in the blue, red, or yellow spectrum. The 13 sequences were transformed into E.coli and subsequent analysis performed to find ____.</p>
+			<p class="">Metagenomic mining was used to discover 13 protein sequences we believed were plausible GAF domain homologs in an effort to expand the known color range of the GAF domain. To assist in future enzymatic discovery, a predictive model was developed that outputs whether an unknown sequence is likely to reflect in the blue, red, or yellow spectrum. Three of the 13 sequences were transformed into E.coli and subsequent analysis were performed to find that our model correctly predicted all three GAF sequences would reflect above 600 nm. </p>
 		</div>
 	</div>
+</div>
+<br>
+<div class="container">
 	<div class="row row-centered">
 		<div class="col-xs-5" id="genomeImg">
 			<img src="pictures/UCD16_metagenome.png"  alt="">
 		</div>
 		<div class="col-xs-7 col-centered projP">
 			<h3>Process and Motivation</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Since metagenomes provide diverse and largely undiscovered species, we used the Joint Genome Institute Integrated Microbiome database to mine the metagenome samples for sequences that were similar to known blue reflecting GAF domains. This process begins by BLAST searching a known GAF domain against deposited metagenome samples. This search will return an E-value, or the expected value that this alignment will occur by random. The lower the E-value means the less likely your alignment is a false positive, because of this only alignment with an E-value of 1e-50 of lower were used. The remaining alignments surrounding protein families, top genomic isolate hits, and metagenome sample annotation would be taken into account before choosing which homologs to use. After searching more than 100 metagenomes we narrowed it down to 13 sequences which came from the following environments:</p>
+			<p>Since metagenomes provide diverse and largely undiscovered species, we used the <em>Joint Genome Institute Integrated Microbiome</em> database to mine the metagenome samples for sequences that were similar to known blue reflecting GAF domains. This process begins by BLAST searching a known GAF domain against deposited metagenome samples. This search will return an E-value, or the expected value that this alignment will occur by random. Lower E-values mean the less likely your alignment is a false positive, because of this our team only used alignments with an E-value of 1e-50 of lower. Of the remaining alignments, the surrounding protein families, top genomic isolate hits, and metagenome sample annotation was taken into consideration before choosing which homologs to attempt transformations with. After searching more than 100 metagenomes, our team narrowed it down to 13 plausible GAF domain homolog sequences which came from the following environments:</p>
 			<ul>
 			<li>Hot spring microbial communities from Yellowstone National Park, Wyoming, USA</li>
-			<li>Groundwater microbial communities from subsurface biofilms in sulfidic aquifier in Frasassi Gorge, Italy</li>
+			<li>Groundwater microbial communities from subsurface biofilms in sulfidic aquifer in Frasassi Gorge, Italy</li>
 			<li>Estuarine microbial communities from Elkhorn Slough, Monterey Bay, California, USA</li>
 			<li>Bacteria ecosystem from Joint Genome Institute, California, USA</li>
 			<li>Hypersaline mat microbial communities from Guerrero Negro, Mexico</li>
 			</ul>
-			<p>
-			&nbsp;&nbsp;&nbsp;&nbsp;Although we chose to only investigate 13 sequences, there were many more we could have chosen. The amount of genomic and metagenomic data deposited in sites like JGI, NCBI and HMMER is massive and continually growing. In total there is about ___ genomes released, and ___ metagenomes released, which is currently increasing exponentially. It’s relatively easy to find protein homologs, but it’s much harder to choose which genes to investigate. This is complicated even further if you are searching for a subgroup within one protein family, like searching for just blue reflecting GAF domains. For this reason, we developed a model to assist in choosing the GAF protein homologs based on subgroup identity.</p>
+			<br />
+			<p>Although we chose to only investigate 13 sequences, there were many more we could have chosen. The amount of genomic and metagenomic data deposited in sites like JGI, NCBI and HMMER is massive and continually growing (23). Already there is 17,000 genomes deposited in NCBI(23). It&rsquo;s relatively easy to find protein homologs, but it&rsquo;s much harder to choose which genes to investigate. This is complicated even further if you are searching for a subgroup within one protein family, like searching for just blue reflecting GAF domains. For this reason, we developed a model to assist in choosing the GAF protein homologs based on subgroup identity.</p>
 			</div>
 			</div>
 		<div class="row row-centered">
 			<div class="col-xs-10 col-centered">
         	<h3>Model development</h3> <h4 class = "pLink"><a href="http://ucdigem.pythonanywhere.com/" target="_blank">Web deployed model</a></h4>
-			<p>
-			In order to refine the GAF homologs down to the subgroup level, ideally we needed a model that could identity patterns in protein sequences which affect the subgroup identity. In searching for existing programs, we discovered over twenty programs dating back to 1996 that were designed for a similar purpose. However, many were not maintained over the years or open access. Of the 12 programs our data was tested set on, most failed to correctly separate the protein family based on subgroup. Since we were unable to find a program which fit our needs, we developed our own.</p><p>
-        	Historically, consensus sequences and pro-site maps were used to identify influential patterns in sequences. While these methods are effective for highly conserved sequences and regions, they require arbitarty data cut-offs which makes their methods a bit course. One method which does not require these cut-offs are profile Hidden Markov Models, or profile HMMs. Profile HMM’s are statistical models that give the probability of any amino acid or DNA base at any position in the sequence. For example, if there is a lysine at position 2 in the sequence alignment that informs not only the probability of lysine at position 2, but the probability of other similar amino acids at that position. Profile HMM’s have become widely used in identifying protein families, even Pfam the protein family database used HMM’s to curate their database.</p>
+			<p>In order to refine the GAF homologs down to the subgroup level, ideally we needed a model that could identity patterns in protein sequences which affect the subgroup identity. In searching for existing programs, we discovered over twenty programs dating back to 1996 that were designed for a similar purpose. However, many were not maintained over the years or open access. Of the 12 programs our data was tested set on, most failed to correctly separate the protein family based on subgroup. Since we were unable to find a program which fit our needs, we developed our own.</p>
+			<p>Historically, consensus sequences and pro-site maps were used to identify influential patterns in sequences. While these methods are effective for highly conserved sequences and regions, they require arbitrary data cut-offs which makes their methods a bit coarse. One method which does not require these cut-offs are profile Hidden Markov Models, or profile HMMs. Profile HMM&rsquo;s are statistical models that give the probability of any amino acid or DNA base at any position in the sequence. For example, if there is a lysine at position 2 in the sequence alignment this informs not only the probability of lysine at position 2, but the probability of other similar amino acids at that position. Profile HMM&rsquo;s have become widely used in identifying protein families, even Pfam the protein family database used HMM&rsquo;s to curate their database (24).</p>
         	</div>
         </div>
 </div>
@@ -46,17 +48,63 @@ title: Gene Selection
 <div class="container">
 	<div class="row row-centered">
 		<div class="col-xs-10 col-centered">
-        	<p>
-			Specifically, the model began with about 100 previously characterized GAF protein sequences which we then divided into blue, yellow, and red subgroups. The blue subgroup represents any GAF sequence that absorbs in the red spectra, and thus reflects and appears blue. For every subgroup we created multiple sequence alignments that were influenced by the protein structure using Promals3D. Using the protein structure in the multiple alignment allows relatively divergent clusters to be aligned with more accuracy because it takes into account sequence-based constraints derived from the 3D structures. After creating the three multiple sequence alignments, a profile HMM was created using HMMER. The model then aligns the user given sequence and compares it to all three profile HMMs. By calculating the log2 odds ratio of the observed to expected E value a quantifiable score is produced. This model now has a web interface and is downloadable on github here.  </p><p>
-        	To assess the accuracy of our model a four-fold cross validation was preformed. This meaning we removed a random quarter of our CBCR sequences and only used the remaining 3/4ths for the profile HMM creation. We would then use the random quarter of sequences as the query against this reduced model and calculated how accurately the model could blindly predict the sequences. We repeated this three other times until all random and no overlapping quarters were used as the query. Through this validation we calculated our model has a 75% accuracy which is 42% more accurate than would occur by random chance.
-			</p>
+			<p>Specifically, the model began with about 100 previously characterized GAF protein sequences provided by Clark Lagarias&rsquo;s laboratory which we then divided into blue, yellow, and red subgroups. The blue subgroup represents any GAF sequence that absorbs in the red spectra, and thus reflects and appears blue. For the purposes of this model, GAF domains absorbs from 550nm and below are considered in the yellow subgroup, from 550-600nm are considered in the red subgroup, and from from 600nm and above are considered in the blue subgroup. For every subgroup we created multiple sequence alignments that were influenced by the protein structure using Promals3D. Using the protein structure in the multiple alignment allows relatively divergent clusters to be aligned with more accuracy because it takes into account sequence-based constraints derived from the 3D structures (20) . After creating the three multiple sequence alignments, a profile HMM was created using HMMER. The model then aligns the user given sequence and compares it to all three profile HMMs.By calculating the log2 odds ratio of the observed to expected E value, a quantifiable score is produced. This model now has a web interface and is downloadable on github here.</p>
+			<p>To assess the accuracy of our model a four-fold cross validation was performed. This meaning a random quarter of the GAF sequences were removed and only the remaining 3/4ths were used for the profile HMM creation. This ensures that the model is not populated with the sequences which will be used for assessing accuracy, and thus our accuracy measurement is not biased. The reduced model constructed from just 3/4ths of the original sequences would then be queried by the randomized quarter of previously removed sequences and calculated how accurately the model could blindly predict the sequences. We repeated this three other times until all random and no overlapping quarters were used as the query.Through this validation we calculated our model has a 75% accuracy which is 42% more accurate than would occur by random chance.</p>
+
 
 			<h3 class = "inline">Future Goals</h3><img src="pictures/UCD16_future.png" class = "img-rounded bactImg"alt="">
-			<p>In the future, our team would like to refine this model to have more specificity. Instead of our model predicting three subgroups, we would like to alter it to predict the wavelength range the GAF sequence will absorb at. This level of specificity would be beneficial in distinguishing more nuanced differences such as orange from yellow and blue from green.  </p>
+			<p>In the future, our team would like to refine this model to have more specificity. Instead of our model predicting three subgroups, we would like to alter it to predict the wavelength range the GAF sequence will absorb at. This level of specificity would be beneficial in distinguishing more nuanced differences such as orange from yellow and blue from green.</p>
 		</div>
 			<div class="col-xs-6 col-centered projLinks">
 				<a href="{{"novel.html"| prepend: site.baseurl }}" class="navBtn">Next: Novel GAF Expression</a>
 			</div>		
+	</div>
+<br><hr>
+	<div class="row row-centered footNotes">
+		<div class="col-xs-12 col-centered">
+<ol>
+<li>&nbsp;<a href="http://www.chicagotribune.com/business/ct-artificial-food-coloring-0626-biz-20160624-story.html">http://www.chicagotribune.com/business/ct-artificial-food-coloring-0626-biz-20160624-story.html</a></li>
+<li><a href="http://sensing.konicaminolta.us/products/">http://sensing.konicaminolta.us/products/</a></li>
+<li><a href="http://www.mars.com/global/about-us/policies-and-practices/color-policy">http://www.mars.com/global/about-us/policies-and-practices/color-policy</a></li>
+<li><a href="http://www.nbcnews.com/business/consumer/kraft-mac-cheese-says-goodbye-dye-n345006">http://www.nbcnews.com/business/consumer/kraft-mac-cheese-says-goodbye-dye-n345006</a></li>
+<li><a href="http://blog.generalmills.com/2015/06/a-big-commitment-for-big-g-cereal/">http://blog.generalmills.com/2015/06/a-big-commitment-for-big-g-cereal/</a></li>
+<li><a href="http://www.nestleusa.com/media/pressreleases/nestl%C3%A9-usa-commits-to-removing-artificial-flavors-and-fda-certified-colors-from-all-nestl%C3%A9-chocolate-candy-by-the-end-of-20">http://www.nestleusa.com/media/pressreleases/nestl%C3%A9-usa-commits-to-removing-artificial-flavors-and-fda-certified-colors-from-all-nestl%C3%A9-chocolate-candy-by-the-end-of-20</a></li>
+<li><a href="http://www.fao.org/docrep/016/ap106e/ap106e.pdf">http://www.fao.org/docrep/016/ap106e/ap106e.pdf</a></li>
+<li><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Acid_Blue_9#section=Stability">https://pubchem.ncbi.nlm.nih.gov/compound/Acid_Blue_9#section=Stability</a></li>
+<li><a href="http://www.fda.gov/ForIndustry/ColorAdditives/ColorAdditiveInventories/ucm115641.htm">http://www.fda.gov/ForIndustry/ColorAdditives/ColorAdditiveInventories/ucm115641.htm</a></li>
+<li><a href="http://link.springer.com/article/10.1007/s00217-004-1062-7"> http://link.springer.com/article/10.1007/s00217-004-1062-7</a></li>
+<li><a href="http://www.instructables.com/id/Blue-Foods-Colorful-cooking-without-artificial-dy/"> http://www.instructables.com/id/Blue-Foods-Colorful-cooking-without-artificial-dy/</a></li>
+<li>A Brief History of Phytochrome Nathan C. Rockwell and J. Clark Lagarias</li>
+<li>Hirose, Yuu, et al. "Green/red cyanobacteriochromes regulate complementary chromatic acclimation via a protochromic photocycle."<em>Proceedings of the National Academy of Sciences</em> 110.13 (2013): 4974-4979.</li>
+<li>Rockwell, Nathan C., and J. Clark Lagarias. "A brief history of phytochromes." <em>ChemPhysChem</em> 11.6 (2010): 1172-1180.</li>
+<li>Bussell, Adam N., and David M. Kehoe. &ldquo;Control of a Four-Color Sensing Photoreceptor by a Two-Color Sensing Photoreceptor Reveals Complex Light Regulation in Cyanobacteria.&rdquo; <em>Proceedings of the National Academy of Sciences of the United States of America</em> 110.31 (2013): 12834&ndash;12839. <em>PMC</em>. Web. 7 Oct. 2016.</li>
+<li><a href="http://www.nutritionaloutlook.com/food-beverage/coloring-spirulina-blue"> http://www.nutritionaloutlook.com/food-beverage/coloring-spirulina-blue</a></li>
+<li>Nature&rsquo;s Palette: The Search for Natural Blue Colorants</li>
+<li>https://www.novozymes.com/en</li>
+<li><a href="http://www.dsm.com/corporate/home.html"> http://www.dsm.com/corporate/home.html</a></li>
+<li><a href="http://prodata.swmed.edu/promals3d/promals3d.php"> http://prodata.swmed.edu/promals3d/promals3d.php</a></li>
+<li><a href="https://www.neb.com/products/e6901-impact-kit"> https://www.neb.com/products/e6901-impact-kit</a></li>
+<li>Heim R, Cubitt A, Tsien R (1995).<a href="http://tsienlab.ucsd.edu/Publications/Heim%201995%20Nature%20-%20Improved%20GFP.PDF"> "Improved green fluorescence"</a> (PDF). <em>Nature</em>. 373 (6516): 663&ndash;4.<a href="https://en.wikipedia.org/wiki/Digital_object_identifier">doi</a>:<a href="https://dx.doi.org/10.1038%2F373663b0">10.1038/373663b0</a>.<a href="https://en.wikipedia.org/wiki/PubMed_Identifier"> PMID</a><a href="https://www.ncbi.nlm.nih.gov/pubmed/7854443"> 7854443</a>.</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/genome/browse/"> https://www.ncbi.nlm.nih.gov/genome/browse/</a></li>
+<li><a href="http://pfam.xfam.org/"> http://pfam.xfam.org/</a></li>
+<li>Red/Green Cyanobacteriochromes: Sensors of Color and Power - lagarias</li>
+<li><a href="https://en.wikipedia.org/wiki/Brilliant_Blue_FCF#/media/File:Blue_smarties.JPG"> https://en.wikipedia.org/wiki/Brilliant_Blue_FCF#/media/File:Blue_smarties.JPG</a></li>
+<li>Harnessing phytochrome's glowing potential - clark</li>
+<li><a href="http://www.sciencedirect.com/science/article/pii/S1359511312000268"> Stability of phycocyanin extracted from Spirulina sp.: Influence of temperature, pH and preservatives</a>- R Chaiklahan, N Chirasuwan, B Bunnag - Process Biochemistry, 2012 - Elsevier</li>
+<li>http://www.lightboxkit.com/Assay_dye.html</li>
+<li>"Your Brain - A User's Guide - 100 Things You Never Knew." National Geographic Time INC. Specials 12 Feb. 2016: Print.</li>
+<li>Sensing, Konica Minolta. "How Color Affects Your Perception of Food." <em>Konica Minolta Color, Light, and Display Measuring Instruments</em>. Konica Minolta Sensing Americans Inc., 2006. Web. 10 Oct. 2016.</li>
+<li>"Center for Disease Control and Prevention - General Information Escherichia Coli." <em>CDC 24/7: Saving Lives, Protecting People</em>. Centers for Disease Control and Prevention, 06 Nov. 2015. Web. 10 Oct. 2016.</li>
+<li>Olmos J, Paniagua-Michel J (2014) Bacillus subtilis A Potential Probiotic Bacterium to Formulate Functional Feeds for Aquaculture. J Microb Biochem Technol 6: 361-365. doi:10.4172/1948-5948.1000169</li>
+<li>Zeigler, Daniel R. "Bacillus Genetic Stock Center." <em>Bacillus Genetic Stock Center Website</em>. The Bacillus Genetic Stock Center - Biological Sciences, Oct. 2016. Web. 10 Oct. 2016.</li>
+<li>Vellanoweth, Robert Luis, and Jesse C. Rabinowitz. "The Influence of Ribosome binding-sites Elements on Translational Efficiency in Bacillus Subtilis and Escherichia Coli in Vivo." Molecular Microbiology 1105-1114, 15 Jan. 1992. Web. 9 Oct. 2016.</li>
+<li>"Pveg (Plasmid #55173)." <em>Addgene - The Nonprofit Plasmid Repository</em>. Synthetic Biology; Bacillus BioBrick Box, Aug. 2016. Web. 10 Oct. 2016.</li>
+<li>Gambetta, Gregory A., and Clark J. Lagarias. "Genetic Engineering of Phytochrome Biosynthesis in Bacteria." <em>Section: Molecular and Cellular Biology</em>. Proceedings of the National Academy of Sciences of the United States of America, 19 July 2001. Web. 9 Oct. 2016.</li>
+<li>"Registry of Standard Biological Parts - B0015." <em>Part: BBa_B0015</em>. International Genetically Engineered Machine Competition (iGEM), 17 July 2003. Web. 9 Oct. 2016.</li>
+<li>"Bacillus Subtilis - Indiamart." IndiaMART InterMESH Ltd., n.d. Web. 9 Oct. 2016.</li>
+</ol>
+
+		</div>
 	</div>
 	</div>
 </div>

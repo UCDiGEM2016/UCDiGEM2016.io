@@ -2,39 +2,105 @@
 layout: page
 title: Production Optimization
 ---
-<div class="container">
-	<div class="row row-centered">
-		<div class="blue col-centered col-xs-12">
+<div class="container-fluid">
+	<div class="row row-centered body_odd">
+		<div class=" col-centered col-xs-10">
 			<h1>Product Optimization</h1>
-			<p>Given that our project focuses on how to bring GAF proteins into the food colorant industry and have large scale production, an obvious concern is what effects GAF protein production and how it can be optimized. Our team first focused on how the activation of the phytochromes photosensory properties are dependent on the availability of the bilin cofactor (12). We tested two different GAF protein genetic constructs in E.coli and calculated their expression level at varying induction levels to find that ______. Next our team focused on optimizing the genetic circuit of GAF expression to produce the highest protein expression. While our team was not able to produce concrete results from our genetic circuit work, we provide a detailed experimental design and our work thus far. 
-			</p>
+			<p>Given that our project focuses on how to bring GAF proteins into the food colorant industry and have large scale production, a primary concern is how GAF protein production can be optimized. Our team first focused on apoprotein production using our GAF protein constructs that were regulated by a pBAD promoter. We induced cultures with different concentrations of arabinose, and after harvesting we assessed pellet volume and color vibrancy to see if there was an optimal inducer concentration.</p>
+			<p>Next our team focused on optimizing the entire genetic circuit, now including the cofactor production pathway along with GAF protein expression, to produce the highest protein expression. With the results of our previous induction experiment, we hypothesized that changing the expression mechanism of the cofactor could affect overall production of the complete functional protein. While our team was not able to complete our genetic circuit work, we provide a detailed experimental design and our work thus far.</p>
 		</div>
+	</div>
+</div>
+<br>
+<div class="container">
 		<div class="row row-centered">
 			<div class="col-centered col-xs-12">
 				<h3>Motivation</h3>
-				<p>In order for GAF proteins to be industrially competitive with other natural dyes, the production capabilities need to be comparable. ….. Bc Capitalism lol </p>
+				<p>A main concern with biomanufacturing is how to maximize production of profitable product to offset manufacturing costs. Media ingredient costs and operational costs would already make producing our proteins expensive, not even considering costs for purification and quality control. By engineering the pathway at the cellular level, we can infer how we can optimize each step of the pathway to produce more protein using reasonable amounts of resources.</p>
+				<p>For our project, we take the first step by experimenting with and characterizing GAF protein production in E. coli. Although E. coli is not the optimal chassis to use for large scale production, our simpler, small scale experiments can produce sufficient data from E. coli. In addition, our parts can be used by future teams who wish to continue taking the next proper steps in advancing our protein towards large scale production.</p>
 				<h3>Induction Experiment</h3>
-				<p>TO BE WRITTEN</p>
+				<p>After expressing our GAF protein our team observed visual differences in cell pellets depending on the amount of arabinose added to the cultures. In our construct arabinose induces the expression of the GAF. While it is widely known that the photosensory properties of the CBCR are dependant on the availability of the bilin cofactor (8), our team wanted to quantify that in regards to our genetic circuit and determine if there is a saturation point in which the arabinose is either 1) no longer effective or 2) harmful.</p>
+				<div class="centered"><img src="pictures/UCD16_opt1.png" alt=""></div>
+				<p>First we made 20mM, 10mM, and 1mM (following from left to right) cultures of our NpF2164g5 GAF construct. The 1mM culture had the largest cell pellet, but also lacked any vibrancy. The 10mM culture had a medium sized pellet, and appeared to be the most vibrant and the 20mM arabinose concentration culture was roughly as vibrant as the 10mM, but had a much smaller cell volume. Since the 10 mM solution produced the best results, our team repeated the experiment, but this time with 1mM, 3mM, 10mM, 33mM, and 100mM. </p>
+				<div class="centered"><img src="pictures/UCD16_opt2.png" alt=""></div>
+				<p>After lysing the cells by sonication the lysate was used to take the absorbance spectra. Cells did not grow at 33mM and 100mM arabinose concentrations, likely because either the environment was no longer suitable for growth, or the cell was allocating more resources to GAF synthesis, but there was not enough cofactors to associate with the protein. On the remaining three that did produce cell pellets, the cells were lysed and the lysate used to take spectra. Surprisingly, the 3mM had a higher peak absorbance than the 10mM. This lack of correlation indicates that the higher induction levels do not correlate to higher peak absorbance levels meaning that there is an optimal production of the GAF. Based on our results our team estimates this is around 3mM arabinose concentrations of cell culture. While the induction of GAF synthesis obviously affected the protein vibrance and production efficiency, there could also be ways to improve the genetic circuit itself. For this reason, our team went on to design genetic circuit library that we would like to complete in the future.</p>
 				<h3>Genetic Circuit Experiment Design</h3>
-				<p>Because the GAF protein must associate with a bilin cofactor in order to be photoactive, an engineered cell must also be able to express the necessary enzymes that convert heme into the cofactor. Such an expression system that requires multiple coding genes has room for optimization in order to control the flux of the protein production. For example, upregulating expression of one of the heme-converting enzymes would theoretically increase bilin production and consequently affect overall production rate of the complete protein. Optimizing the pathway would be the next key step in advancing to industrial-scale mass production.
-				</p>
+				<p>Because the GAF protein must associate with a bilin cofactor in order to be photoactive, an engineered cell must also be able to express the necessary enzymes that convert heme into the cofactor. Such an expression system that requires multiple coding genes has room for optimization in order to control the flux of the protein production. For example, upregulating expression of one of the heme-converting enzymes would theoretically increase bilin production and consequently affect overall production rate of the complete protein. Optimizing the pathway would be the next key step in advancing to industrial-scale mass production.</p>
 				<div id="GAFbg">
 					<img src="pictures/UCD16_GAF_background.png" alt="">
+				</div>				
+				<p>Our next step will be to design and test various operon structures for the key genes for protein production. From the iGEM registry, there are collections of promoters and ribosome binding sites of various strengths. We can design an operon library in which we swap promoters and RBS&rsquo;s used to regulate expression of each gene. Monocistronic and polycistronic variants can also be considered, as well as gene order. Such a library would have thousands of variations. Experimentally measuring overall protein production will provide insight of what structure, gene order, and regulatory components will produce the most efficient genetic circuit for protein production.</p>
+				<p>From the current registry catalog, we can use the Anderson collection of constitutive promoters since they span a wide range of relative strength. The community RBS collection can also be considered for their popularity. A single strong terminator (B0015) will be used throughout since we decided termination rate is not worth varying in our libraries.</p>
+				<p>We have designed three overarching hierarchical operon structures for our phycocyanobilin-dependent GAF proteins. These proteins require three genes: heme oxygenase (HO) to convert heme to biliverdin, PcyA to convert biliverdin to the PCB cofactor, and the coding for the actual apoprotein. HO and PcyA are already in the registry, as they are the oldest parts ever submitted from the very first iGEM (I15008 and I15009, respectively) and are available for all future teams. Our goal with the operon will be to provide insight to future iGEM projects on how HO and PcyA should be expressed in conjunction with the CBCR protein.</p>
+				<p>Our first design is completely monocistronic, with each of these three proteins under control of separate promoters.</p>
+				<div class= "centered structImg">
+					<img src="pictures/UCD16_eKey.png" alt="">
 				</div>
-				
-				<p>Our next step will be to design and test various operon structures for the key genes for protein production. From the iGEM registry, there are collections of promoters and ribosome binding sites of various strengths. We can design an operon library in which we swap promoters and RBS’s used to regulate expression of each gene. Monocistronic and polycistronic variants can also be considered, as well as gene order. Such a library would have thousands of variations. Experimentally measuring overall protein production will provide insight of what structure, gene order, and regulatory components will produce the most efficient genetic circuit for protein production.</p><p>
-				From the current registry catalog, we can use the Anderson collection of constitutive promoters since they span a wide range of relative strength. The community RBS collection can also be considered for their popularity. 
-				</p><p>
-				In an effort to explore the effect of operon structure on GAF protein expression, we designed an experiment which will construct an operon library with a total of 5,012 variations. This operon library could then show what structure, order, and parts make the most efficient genetic circuit. </p><p>
-				Initially we chose 8 promoters, 4 ribosome binding sites, and 3 different plasmid structures we hypothesized could significantly upregulate the protein expression. </p><p>
-				Overall, we were able to _____(idk how far jon/samir got). </p>
-				<h3 class="inline">Future Directions</h3><img src="pictures/UCD16_future.png" class = "img-rounded bactImg"alt="">
-				<p>In the future, our team would like to do a more thorough investigation into induction quantity. We found our results that different GAF proteins required different amounts of the cofactor to be quite interesting and would like to expand our experiment to include other GAF proteins and also GAF proteins which use biliverdin as their cofactor, unlike the PCB cofactor the protein we expressed were. If we find the trend that cofactor availability affects different GAF proteins differently we would like to investigate what three dimensional aspects to the protein are influencing this. </p><p>
-				As for the genetic circuit design, our team would like to finish the last bit of the operon library to find if there is an optimal genetic circuit that significantly upregulates or downregulates GAF protein expression. </p>
+				<div class= "centered structImg">
+					<img src="pictures/UCD16_Struct1.png" alt="">
+				</div>		
+				<p>Our second design is partially polycistronic, with HO and PcyA expressed under the same promoter while the apoprotein is under separate regulation. Our reasoning for this split is because PCB production is an independent metabolic pathway and it is worth exploring separately.</p>
+				<div class= "centered structImg">
+					<img src="pictures/UCD16_Struct2.png" alt="">
+				</div>	
+				<p>Our third design is completely polycistronic. This provides the most flexibility in gene order, as the three genes can have swapped positions with different strength RBS&rsquo;s while being regulated together under the same promoter.</p>
+				<div class= "centered structImg">
+					<img src="pictures/UCD16_Struct3.png" alt="">
+				</div>	
+				<h3 class = "inline">Future Directions</h3><img src="pictures/UCD16_future.png" class = "bactImg img-rounded" alt="">
+				<p>In the future, our team would like to do a more thorough investigation into induction quantity. We found our results that different GAF proteins required different amounts of the cofactor to be quite interesting and would like to expand our experiment to include other GAF proteins and also GAF proteins which use biliverdin as their cofactor, unlike the PCB cofactor the protein we expressed were. If we find the trend that cofactor availability affects different GAF proteins differently we would like to investigate what three dimensional aspects to the protein are influencing this.</p>
+				<p>As for the genetic circuit design, our team would like to finish the last bit of the operon library to find if there is an optimal genetic circuit that significantly upregulates or downregulates GAF protein expression.</p>
 			</div>
 		</div>
 			<div class="col-xs-6 col-centered projLinks">
 				<a href="{{"gras.html"| prepend: site.baseurl }}" class="navBtn">Next: Expression in a GRAS Organism</a>
 			</div>	
+<br><hr>
+	<div class="row row-centered footNotes">
+		<div class="col-xs-12 col-centered">
+<ol>
+<li>&nbsp;<a href="http://www.chicagotribune.com/business/ct-artificial-food-coloring-0626-biz-20160624-story.html">http://www.chicagotribune.com/business/ct-artificial-food-coloring-0626-biz-20160624-story.html</a></li>
+<li><a href="http://sensing.konicaminolta.us/products/">http://sensing.konicaminolta.us/products/</a></li>
+<li><a href="http://www.mars.com/global/about-us/policies-and-practices/color-policy">http://www.mars.com/global/about-us/policies-and-practices/color-policy</a></li>
+<li><a href="http://www.nbcnews.com/business/consumer/kraft-mac-cheese-says-goodbye-dye-n345006">http://www.nbcnews.com/business/consumer/kraft-mac-cheese-says-goodbye-dye-n345006</a></li>
+<li><a href="http://blog.generalmills.com/2015/06/a-big-commitment-for-big-g-cereal/">http://blog.generalmills.com/2015/06/a-big-commitment-for-big-g-cereal/</a></li>
+<li><a href="http://www.nestleusa.com/media/pressreleases/nestl%C3%A9-usa-commits-to-removing-artificial-flavors-and-fda-certified-colors-from-all-nestl%C3%A9-chocolate-candy-by-the-end-of-20">http://www.nestleusa.com/media/pressreleases/nestl%C3%A9-usa-commits-to-removing-artificial-flavors-and-fda-certified-colors-from-all-nestl%C3%A9-chocolate-candy-by-the-end-of-20</a></li>
+<li><a href="http://www.fao.org/docrep/016/ap106e/ap106e.pdf">http://www.fao.org/docrep/016/ap106e/ap106e.pdf</a></li>
+<li><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Acid_Blue_9#section=Stability">https://pubchem.ncbi.nlm.nih.gov/compound/Acid_Blue_9#section=Stability</a></li>
+<li><a href="http://www.fda.gov/ForIndustry/ColorAdditives/ColorAdditiveInventories/ucm115641.htm">http://www.fda.gov/ForIndustry/ColorAdditives/ColorAdditiveInventories/ucm115641.htm</a></li>
+<li><a href="http://link.springer.com/article/10.1007/s00217-004-1062-7"> http://link.springer.com/article/10.1007/s00217-004-1062-7</a></li>
+<li><a href="http://www.instructables.com/id/Blue-Foods-Colorful-cooking-without-artificial-dy/"> http://www.instructables.com/id/Blue-Foods-Colorful-cooking-without-artificial-dy/</a></li>
+<li>A Brief History of Phytochrome Nathan C. Rockwell and J. Clark Lagarias</li>
+<li>Hirose, Yuu, et al. "Green/red cyanobacteriochromes regulate complementary chromatic acclimation via a protochromic photocycle."<em>Proceedings of the National Academy of Sciences</em> 110.13 (2013): 4974-4979.</li>
+<li>Rockwell, Nathan C., and J. Clark Lagarias. "A brief history of phytochromes." <em>ChemPhysChem</em> 11.6 (2010): 1172-1180.</li>
+<li>Bussell, Adam N., and David M. Kehoe. &ldquo;Control of a Four-Color Sensing Photoreceptor by a Two-Color Sensing Photoreceptor Reveals Complex Light Regulation in Cyanobacteria.&rdquo; <em>Proceedings of the National Academy of Sciences of the United States of America</em> 110.31 (2013): 12834&ndash;12839. <em>PMC</em>. Web. 7 Oct. 2016.</li>
+<li><a href="http://www.nutritionaloutlook.com/food-beverage/coloring-spirulina-blue"> http://www.nutritionaloutlook.com/food-beverage/coloring-spirulina-blue</a></li>
+<li>Nature&rsquo;s Palette: The Search for Natural Blue Colorants</li>
+<li>https://www.novozymes.com/en</li>
+<li><a href="http://www.dsm.com/corporate/home.html"> http://www.dsm.com/corporate/home.html</a></li>
+<li><a href="http://prodata.swmed.edu/promals3d/promals3d.php"> http://prodata.swmed.edu/promals3d/promals3d.php</a></li>
+<li><a href="https://www.neb.com/products/e6901-impact-kit"> https://www.neb.com/products/e6901-impact-kit</a></li>
+<li>Heim R, Cubitt A, Tsien R (1995).<a href="http://tsienlab.ucsd.edu/Publications/Heim%201995%20Nature%20-%20Improved%20GFP.PDF"> "Improved green fluorescence"</a> (PDF). <em>Nature</em>. 373 (6516): 663&ndash;4.<a href="https://en.wikipedia.org/wiki/Digital_object_identifier">doi</a>:<a href="https://dx.doi.org/10.1038%2F373663b0">10.1038/373663b0</a>.<a href="https://en.wikipedia.org/wiki/PubMed_Identifier"> PMID</a><a href="https://www.ncbi.nlm.nih.gov/pubmed/7854443"> 7854443</a>.</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/genome/browse/"> https://www.ncbi.nlm.nih.gov/genome/browse/</a></li>
+<li><a href="http://pfam.xfam.org/"> http://pfam.xfam.org/</a></li>
+<li>Red/Green Cyanobacteriochromes: Sensors of Color and Power - lagarias</li>
+<li><a href="https://en.wikipedia.org/wiki/Brilliant_Blue_FCF#/media/File:Blue_smarties.JPG"> https://en.wikipedia.org/wiki/Brilliant_Blue_FCF#/media/File:Blue_smarties.JPG</a></li>
+<li>Harnessing phytochrome's glowing potential - clark</li>
+<li><a href="http://www.sciencedirect.com/science/article/pii/S1359511312000268"> Stability of phycocyanin extracted from Spirulina sp.: Influence of temperature, pH and preservatives</a>- R Chaiklahan, N Chirasuwan, B Bunnag - Process Biochemistry, 2012 - Elsevier</li>
+<li>http://www.lightboxkit.com/Assay_dye.html</li>
+<li>"Your Brain - A User's Guide - 100 Things You Never Knew." National Geographic Time INC. Specials 12 Feb. 2016: Print.</li>
+<li>Sensing, Konica Minolta. "How Color Affects Your Perception of Food." <em>Konica Minolta Color, Light, and Display Measuring Instruments</em>. Konica Minolta Sensing Americans Inc., 2006. Web. 10 Oct. 2016.</li>
+<li>"Center for Disease Control and Prevention - General Information Escherichia Coli." <em>CDC 24/7: Saving Lives, Protecting People</em>. Centers for Disease Control and Prevention, 06 Nov. 2015. Web. 10 Oct. 2016.</li>
+<li>Olmos J, Paniagua-Michel J (2014) Bacillus subtilis A Potential Probiotic Bacterium to Formulate Functional Feeds for Aquaculture. J Microb Biochem Technol 6: 361-365. doi:10.4172/1948-5948.1000169</li>
+<li>Zeigler, Daniel R. "Bacillus Genetic Stock Center." <em>Bacillus Genetic Stock Center Website</em>. The Bacillus Genetic Stock Center - Biological Sciences, Oct. 2016. Web. 10 Oct. 2016.</li>
+<li>Vellanoweth, Robert Luis, and Jesse C. Rabinowitz. "The Influence of Ribosome binding-sites Elements on Translational Efficiency in Bacillus Subtilis and Escherichia Coli in Vivo." Molecular Microbiology 1105-1114, 15 Jan. 1992. Web. 9 Oct. 2016.</li>
+<li>"Pveg (Plasmid #55173)." <em>Addgene - The Nonprofit Plasmid Repository</em>. Synthetic Biology; Bacillus BioBrick Box, Aug. 2016. Web. 10 Oct. 2016.</li>
+<li>Gambetta, Gregory A., and Clark J. Lagarias. "Genetic Engineering of Phytochrome Biosynthesis in Bacteria." <em>Section: Molecular and Cellular Biology</em>. Proceedings of the National Academy of Sciences of the United States of America, 19 July 2001. Web. 9 Oct. 2016.</li>
+<li>"Registry of Standard Biological Parts - B0015." <em>Part: BBa_B0015</em>. International Genetically Engineered Machine Competition (iGEM), 17 July 2003. Web. 9 Oct. 2016.</li>
+<li>"Bacillus Subtilis - Indiamart." IndiaMART InterMESH Ltd., n.d. Web. 9 Oct. 2016.</li>
+</ol>
+
+		</div>
+	</div>		
 	</div>
 </div>

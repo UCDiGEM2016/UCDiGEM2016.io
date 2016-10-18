@@ -94,6 +94,9 @@ p
 			font-size: 170%;
 
 		}
+		img{
+			height:200px;
+		}
 
 }
 header{
@@ -254,6 +257,18 @@ min-height: 25vh;
 {
 	@include gradient-vertical($blue, lighten($blue,10%), 0%, 100%);
 	color:white;
+	.projLinks
+	{
+
+		border-color:white;
+		a{
+			border-color:white;
+		}
+	}
+	h2
+	{
+		color:white;
+	}
 	min-height:20vh;
 }
 .body_team
@@ -374,6 +389,12 @@ min-height: 25vh;
 {
 	height:150px;
 	float: right;
+}
+.structImg
+{
+	img{
+	max-height:120px;
+}
 }
 .hmmImg
 {
